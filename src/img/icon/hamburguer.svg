@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+	<title>Novo Projeto</title>
+	<defs>
+		<image  width="48" height="5" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAFBAMAAADxm3KqAAAAAXNSR0IB2cksfwAAABJQTFRF////////////////////////uuV0AgAAAAZ0Uk5T3+f3//DgBqWrkgAAABNJREFUeJxjYFQ2xgJMAhjoIAEAlb8XNfTICFsAAAAASUVORK5CYII="/>
+		<image  width="48" height="5" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAFBAMAAADxm3KqAAAAAXNSR0IB2cksfwAAABJQTFRF////////////////////////uuV0AgAAAAZ0Uk5T3+f3//DgBqWrkgAAABNJREFUeJxjYFQ2xgJMAhjoIAEAlb8XNfTICFsAAAAASUVORK5CYII="/>
+		<image  width="48" height="6" id="img3" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAGBAMAAAB3DwAEAAAAAXNSR0IB2cksfwAAABJQTFRF////////////////////////uuV0AgAAAAZ0Uk5T3+f3//DgBqWrkgAAABNJREFUeJxjYFQ2xgJMAhgGUgIAD9wb2QKUGUIAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Vector" href="#img1" x="6" y="43"/>
+	<use id="Vector copy 2" href="#img2" x="6" y="27"/>
+	<use id="Vector copy" href="#img3" x="6" y="10"/>
+</svg>
