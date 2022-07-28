@@ -27,12 +27,12 @@
               <li><a href="#"><img src="./img/icon/buy.svg" alt="" class="tw-w-7"></a></li>
             </ul>
           </div>
-          <!-- DROPDOW MOBILE -->
-          <div id="mobile-dropdown" class="tw-absolute tw-w-full tw-top-0 tw-left-0"> <!--colocar o hidden aqui -->
-            <div id="search" class=" tw-flex tw-p-4 tw-shadow-2xl tw-w-10/12 tw-bg-white ">
-              <form method="GET" class=" tw-w-full ">
-                <div class="tw-text-gray-600 focus-within:tw-text-gray-400 tw-flex ">
-                  <input type="search" id="default-search" class="tw-block tw-p-2 tw-h-12 tw-w-full tw-text-sm tw-text-gray-900 tw-italic tw-bg-slate-500  tw-border tw-border-gray-300 focus:tw-no-underline tw-truncate focus:outline-none" placeholder="O QUE VOCÊ PROCURA?" >
+<!-- NAVIGATION MOBILE -->
+          <section id="mobile-dropdown-menu" class="tw-absolute tw-w-76 tw-top-0 tw-left-0 md:tw-hidden "> <!--colocar o hidden aqui -->
+            <div id="search"  class=" tw-relative tw-flex tw-p-2  tw-bg-white tw-z-50 tw-shadow-lg">
+              <form method="GET" class=" tw-w-screen  ">
+                <div class="tw-absolute tw-text-gray-600 tw-flex tw-w-9/12 tw-ml-2  ">
+                  <input type="search" style="background-color:#EBEBEB ;" class="tw-p-2 tw-h-12 tw-w-full tw-text-sm tw-text-gray-900 tw-italic tw-caret-slate-400 tw-bg-gray-900 " placeholder="O QUE VOCÊ PROCURA?" >
                   <span class="tw-relative -tw-ml-11 tw-flex tw-items-center tw-pl-2  ">
                     <button type="submit" class="tw-p-1 focus:tw-outline-none focus:tw-shadow-outline">
                       <a href="#"><img src="./img/icon/searblack.svg" alt="" class="tw-w-5 tw-h-5"></a>
@@ -40,73 +40,72 @@
                   </span>
                  </div>
               </form>
-              <div id="close" class="tw-relative -tw-right-16 -tw-top-4 tw-tablet tw-p-4 tw-bg-white tw-flex tw-justify-center tw-items-center">
-                <a href="#"><i class="fa-solid fa-x text-2xl"></i></a>
-              </div>
+             <button id="close" class="tw-relative -tw-right-12 -tw-top-4 tw-p-4  tw-flex tw-bg-white tw-items-center">
+              <i class="fa-solid fa-xmark tw-text-2xl"></i>
+             </button>
             </div>
-              <div id="navgation" class="tw-px-4 tw-py-2 tw-w-10/12 tw-bg-white lg:tw-init">
-                <ul class="text-black text-base lg:flex lg:text-white lg:justify-center lg:items-center lg:mt-4 ">
-                  <li class=" mb-4 pr-5 w-full flex justify-between items-center font-medium  ">
-                    <a href="#">NEW</a> 
-                    <i class="fa-solid fa-angle-right lg:invisible"></i>
-                  </li> 
-                  <li class=" tw-mb-4 tw-pr-5 tw-w-full tw-flex tw-justify-between tw-items-center tw-font-medium  ">
-                    <a href="#">SUTIÃ</a> 
-                    <i class="fa-solid fa-angle-right lg:tw-invisible"></i> 
-                  </li> 
-                  <li class=" tw-mb-4 tw-pr-5 tw-w-full tw-flex tw-justify-between tw-items-center tw-font-medium  ">
-                    <a href="#">CALCIHA</a> 
-                    <i class="fa-solid fa-angle-right lg:tw-invisible"></i> 
-                  </li> 
-                  <li class=" tw-mb-4 tw-pr-5 tw-w-full tw-flex tw-justify-between tw-items-center tw-font-medium  ">
-                    <a href="#">BIQUINÍS</a> 
-                    <i class="fa-solid fa-angle-right lg:tw-invisible"></i> 
-                  </li> 
-                  <li class=" tw-mb-4 tw-pr-5 tw-w-full tw-flex tw-justify-between tw-items-center tw-font-medium  ">
-                    <a href="#">MAIÓS</a> 
-                    <i class="fa-solid fa-angle-right lg:tw-invisible"></i> 
-                  </li> 
-                  <li class=" tw-mb-4 tw-pr-5 tw-w-full tw-flex tw-justify-between tw-items-center tw-font-medium  ">
-                    <a href="#">RESORT</a> 
-                    <i class="fa-solid fa-angle-right lg:tw-invisible"></i> 
-                  </li> 
-                  <li class=" tw-mb-4 tw-pr-5 tw-w-full tw-flex tw-justify-between tw-items-center tw-font-medium  ">
-                    <a href="#">ECO</a> 
-                    <i class="fa-solid fa-angle-right lg:tw-invisible"></i> 
-                  </li> 
-                  <li class=" tw-mb-4 tw-pr-5 tw-w-full tw-flex tw-justify-between tw-items-center tw-font-medium  ">
-                    <a href="#">CLÁSSICOS</a> <i clas
-                    s="fa-solid fa-angle-right lg:tw-invisible"></i> 
-                  </li> 
-                  <li class=" tw-mb-4 tw-pr-5 tw-w-full tw-flex tw-justify-between tw-items-center tw-font-medium  ">
-                    <a href="#">OUTLET</a> 
-                    <i class="fa-solid fa-angle-right lg:tw-invisible"></i> 
-                  </li> 
-                  <li class=" tw-mb-4 tw-pr-5 tw-w-full tw-flex tw-justify-between tw-items-center tw-font-medium  ">
-                    <a href="#">ACESSÓRIOS</a> 
-                    <i class="fa-solid fa-angle-right lg:tw-invisible"></i> 
-                  </li> 
-                  <li class=" tw-mb-4 tw-pr-5 tw-w-full tw-flex tw-justify-between tw-items-center tw-font-medium  ">
-                    <a href="#">MASCULINO</a> 
-                    <i class="fa-solid fa-angle-right lg:tw-invisible"></i> 
-                  </li> 
-                  <li class=" tw-mb-4 tw-pr-5 tw-w-full tw-flex tw-justify-between tw-items-center tw-font-medium  ">
-                    <a href="#">COLEÇÕES</a> 
-                    <i class="fa-solid fa-angle-right lg:tw-invisible"></i> 
-                  </li> 
-                </ul>
-              </nav>   
-              </div>
-              <div id="count" class="tw-py-4 tw-px-4 tw-w-10/12 tw-bg-white tw-shadow-2xl">
-                <nav>
-                  <ul>
-                    <li><a href="#" class="tw-mb-6 tw-pr-5 tw-w-full tw-flex tw-items-center tw-font-medium "><i><img src="./img/icon/bag.svg" alt=""></i><p class="tw-ml-6">MINHA SACOLA (2) </p></a></li> <!--nescessaria a troca do "(2)" para inserção dinamica-->
-                    <li><a href="#" class="tw-mb-6 tw-pr-5 tw-w-full tw-flex tw-items-center tw-font-medium "><i><img src="./img/icon/person.svg" alt=""></i><p class="tw-ml-6">MINHA CONTA </p></a></li>
+              <nav id="navgation" class=" tw-w-76 tw-bg-white lg:tw-init snap-y ">
+                  <ul class="text-black tw-h-96 text-base lg:flex lg:text-white lg:justify-center lg:items-center  snap-y snap-mandatory overflow-y-auto ">
+                    <li>
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4" ><span>NEW</span> <i class="fa-solid fa-angle-right lg:invisible"></i></a> 
+                    </li> 
+                    <li >
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>SUTIÃ</span> <i class="fa-solid fa-angle-right "></i></a>  
+                    </li> 
+                    <li>
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4  "><span>CALCIHA</span> <i class="fa-solid fa-angle-right "></i></a>  
+                    </li> 
+                    <li >
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>BIQUINÍS</span> <i class="fa-solid fa-angle-right "></i></a>  
+                    </li> 
+                    <li >
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>MAIÓS</span> <i class="fa-solid fa-angle-right "></i></a>  
+                    </li> 
+                    <li >
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>RESORT</span> <i class="fa-solid fa-angle-right "></i></a>  
+                    </li> 
+                    <li >
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>ECO</span> <i class="fa-solid fa-angle-right "></i></a>  
+                    </li> 
+                    <li >
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>CLÁSSICOS</span> <i class="fa-solid fa-angle-right "></i></a>  
+                    </li> 
+                    <li >
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>OUTLET</span> <i class="fa-solid fa-angle-right "></i></a>  
+                    </li> 
+                    <li >
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>ACESSÓRIOS</span> <i class="fa-solid fa-angle-right "></i></a>  
+                    </li> 
+                    <li >
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>MASCULINO</span> <i class="fa-solid fa-angle-right "></i></a>  
+                    </li> 
+                    <li >
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>COLEÇÕES</span> <i class="fa-solid fa-angle-right "></i></a>  
+                    </li> 
                   </ul>
-                </nav>
+              </nav>   
+          <div id="count" class=" tw-absolute tw-top-3/4 -tw-mt-23 tw-py-4 tw-px-4 tw-w-76 tw-bg-white tw-shadow-3xl tw-relative tw-z-50 lg:-tw-mt-28">
+            <nav>
+              <ul>
+                <li><a href="#" class="tw-mb-6 tw-pr-5 tw-w-full tw-flex tw-items-center tw-font-medium ">
+                  <i><img src="./img/icon/bag.svg" alt=""></i>
+                  <p class="tw-ml-6">MINHA SACOLA (2) </p></a></li> <!--nescessaria a troca do "(2)" para inserção dinamica-->
+                <li><a href="#" class="tw-mb-6 tw-pr-5 tw-w-full tw-flex tw-items-center tw-font-medium "><i><img src="./img/icon/person.svg" alt=""></i><p class="tw-ml-6">MINHA CONTA </p></a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <section id="dropdown-sacola"  class="tw-absolute tw-w-10/12 tw-top-0 tw-right-0 tw-bg-white tw-p-2 tw-hidden">
+          <span>MINHA SACOLA (2) </span>
+          <div id="sacola-produtos" class="tw-w-full p-2">
+              <div id="produto" class="tw-flex tw-items-center">
+                <div id="produto-image">
+                  <img src="" alt="">
+                </div>
               </div>
           </div>
-        </nav>
+        </section>
+<!-- NAVIGATION MOBILE -->
       </section>
     </header>
     <main>
@@ -237,5 +236,6 @@
         </div>
       </section>
     </footer>
+    <script src="https://kit.fontawesome.com/d951250582.js" crossorigin="anonymous"></script>
 </body>
 </html>
