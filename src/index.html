@@ -14,13 +14,14 @@
     <header>
       <section id="navgation" class="tw-w-full tw-h-screen tw-bg-cover tw-bg-center" style="background-image: url('img/banner/banner.jpg') ;">
         <nav id="menu" class="tw-w-full tw-h-16 tw-bg-slate-900/80 tw-px-4 tw-flex tw-items-center lg:tw-h-20 ">
-          <button id="menu-icon-mobile">
-            <img src="./img/icon/hamburguer.svg" class="tw-h-10  " alt="">
+          <button id="menu-icon-mobile lg:tw-hidden">
+            <img src="./img/icon/menu.svg" class="tw-h-8 lg:tw-hidden " alt="">
           </button>
           <div id="logo" class="tw-ml-4">
-            <img src="./img/logo/logo_cila.svg" alt="" class="">
+            <img src="./img/logo/logo_cila.svg" alt="" class="lg:tw-hidden">
+            <img src="./img/logo/logoComplet.svg" alt="" class="tw-hidden lg:tw-block">
           </div>
-          <div id="iconMenu" class="tw-absolute tw-left-3/4 tw-mr-2 absolute lg:tw-hidden ">
+          <div id="iconMenu" class="tw-absolute tw-right-11 tw-mr-2 absolute  ">
             <ul class="tw-flex tw-items-end tw-gap-5">
               <li><a href="#"><img src="./img/icon/Union-1.svg" alt="" class="tw-w-7"></a></li>
               <li><a href="#"><img src="./img/icon/Union-2.svg" alt="" class="tw-w-7"></a></li>
@@ -28,83 +29,172 @@
             </ul>
           </div>
 <!-- NAVIGATION MOBILE -->
-          <section id="mobile-dropdown-menu" class="tw-absolute tw-w-76 tw-top-0 tw-left-0 md:tw-hidden "> <!--colocar o hidden aqui -->
-            <div id="search"  class=" tw-relative tw-flex tw-p-2  tw-bg-white tw-z-50 tw-shadow-lg">
-              <form method="GET" class=" tw-w-screen  ">
-                <div class="tw-absolute tw-text-gray-600 tw-flex tw-w-9/12 tw-ml-2  ">
-                  <input type="search" style="background-color:#EBEBEB ;" class="tw-p-2 tw-h-12 tw-w-full tw-text-sm tw-text-gray-900 tw-italic tw-caret-slate-400 tw-bg-gray-900 " placeholder="O QUE VOCÊ PROCURA?" >
+
+          <section id="mobile-dropdown-menu" class="tw-absolute tw-w-96 tw-top-0 tw-left-0 hidden md:tw-hidden "> <!--colocar o hidden aqui -->
+            <form method="GET" class=" tw-w-76 tw-w-full tw-relative tw-flex tw-bg-white tw-z-50 tw-shadow-lg tw-p-4">
+                  <input type="search" style="background-color:#EBEBEB ;"class="tw-p-2 tw-h-12 tw-w-full tw-text-sm tw-text-gray-900 tw-italic tw-caret-slate-400 tw-bg-gray-900 " placeholder="O QUE VOCÊ PROCURA?" >
                   <span class="tw-relative -tw-ml-11 tw-flex tw-items-center tw-pl-2  ">
                     <button type="submit" class="tw-p-1 focus:tw-outline-none focus:tw-shadow-outline">
                       <a href="#"><img src="./img/icon/searblack.svg" alt="" class="tw-w-5 tw-h-5"></a>
                     </button>
                   </span>
-                 </div>
               </form>
-             <button id="close" class="tw-relative -tw-right-12 -tw-top-4 tw-p-4  tw-flex tw-bg-white tw-items-center">
-              <i class="fa-solid fa-xmark tw-text-2xl"></i>
-             </button>
-            </div>
+              <button id="close" class="tw-absolute tw-left-2/4 tw-ml-28 tw-top-0 tw-p-4 tw-bg-white tw-z-50">
+                <img src="./img/icon/close.svg" alt="" >
+              </button>
               <nav id="navgation" class=" tw-w-76 tw-bg-white lg:tw-init snap-y ">
                   <ul class="text-black tw-h-96 text-base lg:flex lg:text-white lg:justify-center lg:items-center  snap-y snap-mandatory overflow-y-auto ">
                     <li>
-                      <a href="#" class="tw-flex tw-justify-between py-3 px-4" ><span>NEW</span> <i class="fa-solid fa-angle-right lg:invisible"></i></a> 
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4">
+                        <span>NEW</span> 
+                        <img src="./img/icon/arrow.svg" alt="">
+                      </a> 
                     </li> 
                     <li >
-                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>SUTIÃ</span> <i class="fa-solid fa-angle-right "></i></a>  
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4">
+                        <span>SUTIÃ</span> 
+                        <img src="./img/icon/arrow.svg" alt="">
+                      </a>  
                     </li> 
                     <li>
-                      <a href="#" class="tw-flex tw-justify-between py-3 px-4  "><span>CALCIHA</span> <i class="fa-solid fa-angle-right "></i></a>  
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4">
+                        <span>CALCIHA</span> 
+                        <img src="./img/icon/arrow.svg" alt="">
+                      </a>  
                     </li> 
                     <li >
-                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>BIQUINÍS</span> <i class="fa-solid fa-angle-right "></i></a>  
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4">
+                        <span>BIQUINÍS</span> 
+                        <img src="./img/icon/arrow.svg" alt="">
+                      </a>  
                     </li> 
                     <li >
-                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>MAIÓS</span> <i class="fa-solid fa-angle-right "></i></a>  
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4">
+                        <span>MAIÓS</span> 
+                        <img src="./img/icon/arrow.svg" alt="">
+                      </a>  
                     </li> 
                     <li >
-                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>RESORT</span> <i class="fa-solid fa-angle-right "></i></a>  
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4">
+                        <span>RESORT</span> 
+                        <img src="./img/icon/arrow.svg" alt="">
+                      </a>  
                     </li> 
                     <li >
-                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>ECO</span> <i class="fa-solid fa-angle-right "></i></a>  
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4">
+                        <span>ECO</span> 
+                        <img src="./img/icon/arrow.svg" alt="">
+                      </a>  
                     </li> 
                     <li >
-                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>CLÁSSICOS</span> <i class="fa-solid fa-angle-right "></i></a>  
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4">
+                        <span>CLÁSSICOS</span> 
+                        <img src="./img/icon/arrow.svg" alt="">
+                      </a>  
                     </li> 
                     <li >
-                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>OUTLET</span> <i class="fa-solid fa-angle-right "></i></a>  
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4">
+                        <span>OUTLET</span> 
+                        <img src="./img/icon/arrow.svg" alt="">
+                      </a>  
                     </li> 
                     <li >
-                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>ACESSÓRIOS</span> <i class="fa-solid fa-angle-right "></i></a>  
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4">
+                        <span>ACESSÓRIOS</span> 
+                        <img src="./img/icon/arrow.svg" alt="">
+                      </a>  
                     </li> 
                     <li >
-                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>MASCULINO</span> <i class="fa-solid fa-angle-right "></i></a>  
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4">
+                        <span>MASCULINO</span> 
+                        <img src="./img/icon/arrow.svg" alt="">
+                      </a>  
                     </li> 
                     <li >
-                      <a href="#" class="tw-flex tw-justify-between py-3 px-4"><span>COLEÇÕES</span> <i class="fa-solid fa-angle-right "></i></a>  
+                      <a href="#" class="tw-flex tw-justify-between py-3 px-4">
+                        <span>COLEÇÕES</span> 
+                        <img src="./img/icon/arrow.svg" alt="">
+                      </a>  
                     </li> 
                   </ul>
               </nav>   
-          <div id="count" class=" tw-absolute tw-top-3/4 -tw-mt-23 tw-py-4 tw-px-4 tw-w-76 tw-bg-white tw-shadow-3xl tw-relative tw-z-50 lg:-tw-mt-28">
-            <nav>
-              <ul>
-                <li><a href="#" class="tw-mb-6 tw-pr-5 tw-w-full tw-flex tw-items-center tw-font-medium ">
-                  <i><img src="./img/icon/bag.svg" alt=""></i>
-                  <p class="tw-ml-6">MINHA SACOLA (2) </p></a></li> <!--nescessaria a troca do "(2)" para inserção dinamica-->
-                <li><a href="#" class="tw-mb-6 tw-pr-5 tw-w-full tw-flex tw-items-center tw-font-medium "><i><img src="./img/icon/person.svg" alt=""></i><p class="tw-ml-6">MINHA CONTA </p></a></li>
+          <div id="count" class=" tw-w-76 tw-absolute tw-top-3/4 -tw-mt-23 tw-p-4 tw-bg-white tw-shadow-3xl tw-relative tw-z-50 lg:-tw-mt-28">
+            <nav >
+              <ul class="tw-grid tw-gap-y-8" >
+                <li>
+                  <a href="#" class="tw-w-full tw-flex tw-items-center tw-font-medium ">
+                    <i><img src="./img/icon/bag.svg" alt=""></i>
+                    <p class="tw-ml-6">MINHA SACOLA (2) </p>
+                  </a>
+                </li> <!--nescessaria a troca do "(2)" para inserção dinamica-->
+                <li>
+                  <a href="#" class=" tw-w-full tw-flex tw-items-center tw-font-medium ">
+                    <i><img src="./img/icon/person.svg" alt=""></i>
+                    <p class="tw-ml-6">MINHA CONTA </p>
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>
         </section>
-        <section id="dropdown-sacola"  class="tw-absolute tw-w-10/12 tw-top-0 tw-right-0 tw-bg-white tw-p-2 tw-hidden">
-          <span>MINHA SACOLA (2) </span>
-          <div id="sacola-produtos" class="tw-w-full p-2">
-              <div id="produto" class="tw-flex tw-items-center">
-                <div id="produto-image">
-                  <img src="" alt="">
+        <!-- DROPDOW CARRINHO DE COMPRAS MOBILE -->
+        <section id="dropdown-bag"  class="tw-absolute tw-w-96 tw-top-0 tw-right-0 tw-flex tw-flex-col tw-items-end tw-hidden ">
+          <button id="close" class="tw-absolute tw-right-2/4 tw-mr-28 tw-top-0 tw-p-4 tw-bg-white tw-z-50">
+            <img src="./img/icon/close.svg" alt="" >
+          </button>
+          <div id="sacola-produtos" class=" tw-h-126 tw-w-76 pl-4 tw-bg-white tw-z-50 tw-pt-8 tw-overflow-auto ">
+            <h1 class="mb-6 tw-text-base">MINHA SACOLA (2) </h1>
+              <div id="product" class="tw-flex tw-justify-between tw-mb-5">
+                <div id="product-image" class="tw-w-70">
+                  <img src="./img/produtos/clothing1.png" alt="" class="">
                 </div>
+                <div id="info-product" class="tw-w-40 tw-py-2">
+                  <h1 class="tw-font-normal tw-leading-4 break-normal tw-mb-1 tw-text-sm">CALCINHA HOT PANT CAVADA FLUITY</h1>
+                  <p class="tw-mb-1"><strong>R$198,00</strong></p>
+                  <div id="product-amount" class="flex">
+                    <button id="les" class="tw-p-2 tw-border tw-border-black"><img src="./img/icon/less.svg" alt=""></button>
+                    <div id="mount" class="tw-px-2 tw-py-1 tw-bg-zinc-200"><span>01</span></div>
+                    <button id="more" class="tw-p-2 tw-border tw-border-black"><img src="./img/icon/more.svg" alt=""></button>
+                  </div>
+                </div>
+                <button id="remove-product" class='tw-flex tw-justify-center tw-items-center'>
+                  <img src="./img/icon/trash.svg" alt="" class="tw-h-6">
+                </button>
               </div>
-          </div>
+
+              <div id="product" class="tw-flex tw-justify-between tw-mb-5">
+                <div id="product-image" class="tw-w-70">
+                  <img src="./img/produtos/clothing2.png" alt="" class="">
+                </div>
+                <div id="info-product" class="tw-w-40 tw-py-2">
+                  <h1 class="tw-font-normal tw-leading-4 break-normal tw-mb-1 tw-text-sm">CALCINHA HOT PANT CAVADA FLUITY</h1>
+                  <p class="tw-mb-1"><strong>R$198,00</strong></p>
+                  <div id="product-amount" class="flex">
+                    <button id="les" class="tw-p-2 tw-border tw-border-black"><img src="./img/icon/less.svg" alt=""></button>
+                    <div id="mount" class="tw-px-2 tw-py-1 tw-bg-zinc-200"><span>01</span></div>
+                    <button id="more" class="tw-p-2 tw-border tw-border-black"><img src="./img/icon/more.svg" alt=""></button>
+                  </div>
+                </div>
+                <button id="remove-product" class='tw-flex tw-justify-center tw-items-center'>
+                  <img src="./img/icon/trash.svg" alt="" class="tw-h-6">
+                </button>
+              </div>
+            </div>
+            <div id="line" class=""></div>
+            <div id="next-cart" class="tw-p-4 tw-bg-white tw-w-76">
+              <div id="price" class="tw-flex tw-items-center tw-justify-between mb-8">
+                <p>SUBTOTAL</p>
+                <span><strong>R$198,00</strong></span>
+              </div>
+              <button class="tw-w-full tw-border tw-border-black tw-py-4 tw-mb-4">
+                <p>CONTINUAR COMPRANDO</p>
+              </button>
+              <button class="tw-w-full tw-border tw-border-black tw-bg-black tw-text-white  tw-py-4 ">
+                <p>FINALIZAR COMPRA</p>
+              </button>
+            </div>
         </section>
+        <!-- DROPDOW CARRINHO DE COMPRAS MOBILE -->
 <!-- NAVIGATION MOBILE -->
       </section>
     </header>

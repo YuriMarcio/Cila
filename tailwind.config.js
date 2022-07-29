@@ -4,12 +4,26 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        'body': ['"Open Sans"',],
+      },
       width: {
         '18': '32rem',
         '76': '19.5rem',
+        '70': '4.375rem',
+        '80': '5rem',
+        '500': '32.188rem'
+      },
+      height: {
+        '126': '26.938rem',
+        '105': '6.617rem',
+        '800': '52.688rem'
       },
       boxShadow: {
         '3xl': '0 -8px 35px -8px rgba(0, 0, 0, 0.8)',
+      },
+      left: {
+        '4x4': '80%',
       }
     },
     screens: {
