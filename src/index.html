@@ -15,14 +15,14 @@
     <header>
       <section id="navgation" class="tw-w-full tw-h-screen tw-bg-cover tw-bg-center" style="background-image: url('img/banner/banner.jpg') ;">
         <nav id="menu" class="tw-w-full tw-h-16 tw-bg-slate-900/80 tw-px-4 tw-flex tw-items-center md:tw-h-20" x-data="{open: false,bag: false,dropdow:false}">
-          <button id="menu-icon-mobile lg:tw-hidden" @click="open = ! open">
+          <button id="menu-icon-mobile lg:" @click="open = ! open">
             <img src="./img/icon/menu.svg" class="tw-h-6 md:tw-hidden " alt="">
           </button>
           <div id="logo" class="tw-ml-4">
             <img src="./img/logo/logo_cila.svg" alt="" class="md:tw-hidden tw-h-30">
             <img src="./img/logo/logoComplet.svg" alt="" class=" tw-hidden  md:tw-block ">
           </div>
-          <div id="iconMenu" class="tw-absolute tw-right-1 md:tw-relative tw-order-10 ">
+          <div id="iconMenu" class="tw-absolute tw-right-1 ">
             <ul class="tw-flex tw-items-end ">
               <li class="tw-p-4"><a href="#"><img src="./img/icon/searchicon-menu.svg" alt="" class="tw-w-5"></a></li>
               <li class="tw-p-4"><a href="#"><img src="./img/icon/profileicon-menu.svg" alt="" class="tw-w-5"></a></li>
@@ -144,9 +144,9 @@
 <!-- NAVIGATION MOBILE -->
   
 <!-- NAVIGATION DESKTOP -->
-<nav id="navgation-desktop" class="hidden md:block">
-  <ul class="tw-w-10/12 tw-text-white tw-flex tw-items-center tw-text-sm">
-    <li>
+<nav id="navgation-desktop" class="hidden md:block tw-flex tw-justify-center tw-items-center">
+  <ul class="tw-max-w-4xl tw-text-white tw-flex tw-items-center tw-text-sm">
+    <li class="">
       <a href="#" class="tw-py-3 tw-px-4">
         <p class="tw-py-3 tw-px-4 y hover:tw-font-bold hover:tw-border-b-2 hover:tw-border-b-white ">NEW</p> 
       </a> 
@@ -285,137 +285,340 @@
     </div>
 </section>
 <!-- DROPDOW CARRINHO DE COMPRAS MOBILE -->
-
 </section>
 </header>
 <main>
-<section id="payment" class=" tw-tw-w-full tw-bg-stone-200  tw-h-20 tw-flex tw-tw-justify-center tw-tw-tw-items-center tw-mb-4">
-<div id="spacing" class="tw-flex tw-justify-between tw-items-center tw-w-3/4">
-<p id="paymentText" class="hidden sm:work"><strong>PARCELAMENTO</strong> EM ATÉ <strong>4x</strong></p>
-<p id="paymentText" class="hidden "><strong>FRETE GRÁTIS</strong> A PARTIR DE R$ 350,00</p>
-<p id="paymentText" class="hidden "><strong>10% OFF</strong> NA PRIMEIRA COMPRA</p>
-</div>
-    </main>
-    <footer class="tw-bg-white tw-mb-4 ">
-      <form action="" class=" tw-bg-black tw-border-b tw-border-gray-700 tw-pb-6 tw-py-4 tw-px-4 lg:tw-flex tw-justify-between tw-items-center">
-      <h1 class="tw-text-white tw-text-lg tw-mb-4 lg:tw-w-1/3">
-        CADASTRE-SE EM NOSSA <strong>NEWSLETTER</strong> E <strong>GANHE 10% DE DESCONTO</strong>
-      </h1>
-      <div class="tw-mb-4 lg:tw-w-3/12 lg:tw-ml-4">
-        <input class="tw-shadow tw-w-full tw-h-12 tw-py-2 tw-px-3 tw-text-gray-500 bg-gray-700  focus:tw-outline-none" id="username" type="text" placeholder="NOME">
-      </div>
-      <div class="tw-mb-4 lg:tw-w-3/12 lg:tw-ml-4">
-        <input class="tw-shadow tw-w-full tw-h-12 tw-py-2 tw-px-3 bg-gray-700 tw-text-gray-500  focus:tw-outline-none" id="username" type="text" placeholder="EMAIL">
-      </div>
-      <div class="tw-mb-4 lg:tw-w-2/12 lg:tw-ml-4">
-        <button class="tw-bg-white tw-font-bold tw-w-full tw-h-12 tw-py-2 tw-px-4 tw-font-normal ">
-          CADASTRAR
-        </button>
-      </div>
-      </form>
-      <section id="submenuBottom" class="tw-bg-black tw-py-4 tw-px-4 lg:tw-flex"  x-data="{acord1 : false,acord2 : false,acord3 : false,acord4 : false}">
-        <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4  lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start ">
-          <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4" @click="acord1 = ! acord1">
-            <h3 class="text-white tw-text-base ">INSTITUCIONAL</h3>
-            <i class="fa-solid fa-plus text-white lg:invisible"></i>
-          </button>
-          <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
-          <section id="" x-show="acord1">
-            <nav>
-              <ul>
-                <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>CONTATO</strong></a></li>
-                <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>PERGUNTAS FREQUENTES</strong></a></li>
-                <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>DICAS DE USO</strong></a></li>
-                <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>GUIA DE MEDIDAS</strong></a></li>
-                <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>CILA EM CASA</strong></a></li>
-              </ul>
-            </nav>
-          </section>
+  <section id="payment" class=" tw-w-full tw-bg-stone-200  tw-h-20 tw-flex tw-justify-center lg:tw-justify-between tw-items-center tw-mb-4 tw-p-7">
+      <p id="paymentText" class=""><strong>PARCELAMENTO</strong> EM ATÉ <strong>4x</strong></p>
+      <p id="paymentText" class="tw-hidden lg:tw-block"><strong>FRETE GRÁTIS</strong> A PARTIR DE R$ 350,00</p>
+      <p id="paymentText" class="tw-hidden lg:tw-block"><strong>10% OFF</strong> NA PRIMEIRA COMPRA</p>
+  </section>
+  <div id="products" class="tw-mb-10">
+    <div class="tw-flex tw-justify-center tw-my-10 tw-text-base tw-font-bold tw-tracking-widest">
+      <h1>ESCRITA EMARANHADA</h1>
+    </div>
+    <ul id="product-showcase" class="tw-w-full tw-flex tw-items-center overflow-hidden">
+      <li class="tw-w-242 tw-cursor-pointer tw-mx-4">
+        <a href="" class="tw-w-242 tw-cursor-pointer">
+            <div id="product-img" class="tw-bg-black tw-w-242 ">
+              <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
+            </div>
+            <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
+              <p class="">CALCINHA HOT PANT CAVADA FLUITY</p>
+              <span class="tw-font-bold ">R$198,00</span>
+            </div>
+        </a>
+      </li>
+
+      <li class="tw-w-242 tw-cursor-pointer tw-mx-4">
+        <a href="" class="tw-w-242 tw-cursor-pointer">
+            <div id="product-img" class="tw-bg-black tw-w-242 ">
+              <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
+            </div>
+            <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
+              <p class="">CALCINHA HOT PANT CAVADA FLUITY</p>
+              <span class="tw-font-bold ">R$198,00</span>
+            </div>
+        </a>
+      </li>
+
+      <li class="tw-w-242 tw-cursor-pointer tw-mx-4">
+        <a href="" class="tw-w-242 tw-cursor-pointer">
+            <div id="product-img" class="tw-bg-black tw-w-242 ">
+              <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
+            </div>
+            <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
+              <p class="">CALCINHA HOT PANT CAVADA FLUITY</p>
+              <span class="tw-font-bold ">R$198,00</span>
+            </div>
+        </a>
+      </li>
+
+      <li class="tw-w-242 tw-cursor-pointer tw-mx-4">
+        <a href="" class="tw-w-242 tw-cursor-pointer">
+            <div id="product-img" class="tw-bg-black tw-w-242 ">
+              <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
+            </div>
+            <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
+              <p class="">CALCINHA HOT PANT CAVADA FLUITY</p>
+              <span class="tw-font-bold ">R$198,00</span>
+            </div>
+        </a>
+      </li>
+
+      <li class="tw-w-242 tw-cursor-pointer tw-mx-4">
+        <a href="" class="tw-w-242 tw-cursor-pointer">
+            <div id="product-img" class="tw-bg-black tw-w-242 ">
+              <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
+            </div>
+            <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
+              <p class="">CALCINHA HOT PANT CAVADA FLUITY</p>
+              <span class="tw-font-bold ">R$198,00</span>
+            </div>
+        </a>
+      </li>
+    </ul>
+    
+  </div>
+  <div id="products" class="tw-mb-10 tw-hidden lg:block">
+    <div class="tw-flex tw-justify-center tw-my-10 tw-text-base tw-font-bold tw-tracking-widest">
+      <h1>ESCRITA EMARANHADA</h1>
+    </div>
+    <ul id="product-showcase" class="tw-w-full tw-flex tw-items-center overflow-hidden">
+      <li class="tw-w-242 tw-cursor-pointer tw-mx-4">
+        <a href="" class="tw-w-242 tw-cursor-pointer">
+            <div id="product-img" class="tw-bg-black tw-w-242 ">
+              <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
+            </div>
+            <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
+              <p class="">CALCINHA HOT PANT CAVADA FLUITY</p>
+              <span class="tw-font-bold ">R$198,00</span>
+            </div>
+        </a>
+      </li>
+
+      <li class="tw-w-242 tw-cursor-pointer tw-mx-4">
+        <a href="" class="tw-w-242 tw-cursor-pointer">
+            <div id="product-img" class="tw-bg-black tw-w-242 ">
+              <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
+            </div>
+            <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
+              <p class="">CALCINHA HOT PANT CAVADA FLUITY</p>
+              <span class="tw-font-bold ">R$198,00</span>
+            </div>
+        </a>
+      </li>
+
+      <li class="tw-w-242 tw-cursor-pointer tw-mx-4">
+        <a href="" class="tw-w-242 tw-cursor-pointer">
+            <div id="product-img" class="tw-bg-black tw-w-242 ">
+              <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
+            </div>
+            <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
+              <p class="">CALCINHA HOT PANT CAVADA FLUITY</p>
+              <span class="tw-font-bold ">R$198,00</span>
+            </div>
+        </a>
+      </li>
+
+      <li class="tw-w-242 tw-cursor-pointer tw-mx-4">
+        <a href="" class="tw-w-242 tw-cursor-pointer">
+            <div id="product-img" class="tw-bg-black tw-w-242 ">
+              <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
+            </div>
+            <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
+              <p class="">CALCINHA HOT PANT CAVADA FLUITY</p>
+              <span class="tw-font-bold ">R$198,00</span>
+            </div>
+        </a>
+      </li>
+
+      <li class="tw-w-242 tw-cursor-pointer tw-mx-4">
+        <a href="" class="tw-w-242 tw-cursor-pointer">
+            <div id="product-img" class="tw-bg-black tw-w-242 ">
+              <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
+            </div>
+            <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
+              <p class="">CALCINHA HOT PANT CAVADA FLUITY</p>
+              <span class="tw-font-bold ">R$198,00</span>
+            </div>
+        </a>
+      </li>
+    </ul>
+    
+  </div>
+  <div id="banner-main" class=" tw-bg-stone-200 tw-flex tw-items-center tw-justify-center tw-flex-col md:tw-flex-row">
+    <div id="banner-img" class="tw-max-w-630/1 tw-p-4 "><img src="./img/produtos/beachsun1.png" alt=""></div>
+    <div id="banner-img" class="tw-max-w-630/1 tw-p-4" ><img src="./img/produtos/beachsun2.png" alt=""></div>
+  </div>
+  <div id="products" class="tw-mb-10 tw-hidden lg:block">
+    <div class="tw-flex tw-justify-center tw-my-10 tw-text-base tw-font-bold tw-tracking-widest">
+      <h1>ESCRITA EMARANHADA</h1>
+    </div>
+    <ul id="product-showcase" class="tw-w-full tw-flex tw-items-center overflow-hidden">
+      <li class="tw-w-242 tw-cursor-pointer tw-mx-4">
+        <a href="" class="tw-w-242 tw-cursor-pointer">
+            <div id="product-img" class="tw-bg-black tw-w-242 ">
+              <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
+            </div>
+            <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
+              <p class="">CALCINHA HOT PANT CAVADA FLUITY</p>
+              <span class="tw-font-bold ">R$198,00</span>
+            </div>
+        </a>
+      </li>
+
+      <li class="tw-w-242 tw-cursor-pointer tw-mx-4">
+        <a href="" class="tw-w-242 tw-cursor-pointer">
+            <div id="product-img" class="tw-bg-black tw-w-242 ">
+              <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
+            </div>
+            <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
+              <p class="">CALCINHA HOT PANT CAVADA FLUITY</p>
+              <span class="tw-font-bold ">R$198,00</span>
+            </div>
+        </a>
+      </li>
+
+      <li class="tw-w-242 tw-cursor-pointer tw-mx-4">
+        <a href="" class="tw-w-242 tw-cursor-pointer">
+            <div id="product-img" class="tw-bg-black tw-w-242 ">
+              <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
+            </div>
+            <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
+              <p class="">CALCINHA HOT PANT CAVADA FLUITY</p>
+              <span class="tw-font-bold ">R$198,00</span>
+            </div>
+        </a>
+      </li>
+
+      <li class="tw-w-242 tw-cursor-pointer tw-mx-4">
+        <a href="" class="tw-w-242 tw-cursor-pointer">
+            <div id="product-img" class="tw-bg-black tw-w-242 ">
+              <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
+            </div>
+            <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
+              <p class="">CALCINHA HOT PANT CAVADA FLUITY</p>
+              <span class="tw-font-bold ">R$198,00</span>
+            </div>
+        </a>
+      </li>
+
+      <li class="tw-w-242 tw-cursor-pointer tw-mx-4">
+        <a href="" class="tw-w-242 tw-cursor-pointer">
+            <div id="product-img" class="tw-bg-black tw-w-242 ">
+              <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
+            </div>
+            <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
+              <p class="">CALCINHA HOT PANT CAVADA FLUITY</p>
+              <span class="tw-font-bold ">R$198,00</span>
+            </div>
+        </a>
+      </li>
+    </ul>
+    
+  </div>
+</main>
+<footer class="tw-bg-white tw-mb-4 ">
+  <form action="" class=" tw-bg-black tw-border-b tw-border-gray-700 tw-pb-6 tw-py-4 tw-px-4 lg:tw-flex tw-justify-between tw-items-center">
+  <h1 class="tw-text-white tw-text-lg tw-mb-4 lg:tw-w-1/3">
+    CADASTRE-SE EM NOSSA <strong>NEWSLETTER</strong> E <strong>GANHE 10% DE DESCONTO</strong>
+  </h1>
+  <div class="tw-mb-4 lg:tw-w-3/12 lg:tw-ml-4">
+    <input class="tw-shadow tw-w-full tw-h-12 tw-py-2 tw-px-3 tw-text-gray-500 bg-gray-700  focus:tw-outline-none" id="username" type="text" placeholder="NOME">
+  </div>
+  <div class="tw-mb-4 lg:tw-w-3/12 lg:tw-ml-4">
+    <input class="tw-shadow tw-w-full tw-h-12 tw-py-2 tw-px-3 bg-gray-700 tw-text-gray-500  focus:tw-outline-none" id="username" type="text" placeholder="EMAIL">
+  </div>
+  <div class="tw-mb-4 lg:tw-w-2/12 lg:tw-ml-4">
+    <button class="tw-bg-white tw-font-bold tw-w-full tw-h-12 tw-py-2 tw-px-4 tw-font-normal ">
+      CADASTRAR
+    </button>
+  </div>
+  </form>
+  <section id="submenuBottom" class="tw-bg-black tw-py-4 tw-px-4 lg:tw-flex"  x-data="{acord1 : false,acord2 : false,acord3 : false,acord4 : false}">
+    <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4  lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start ">
+      <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4" @click="acord1 = ! acord1">
+        <h3 class="text-white tw-text-base ">INSTITUCIONAL</h3>
+        <i class="fa-solid fa-plus text-white lg:invisible"></i>
+      </button>
+      <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
+      <section id="" x-show="acord1">
+        <nav>
+          <ul>
+            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>CONTATO</strong></a></li>
+            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>PERGUNTAS FREQUENTES</strong></a></li>
+            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>DICAS DE USO</strong></a></li>
+            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>GUIA DE MEDIDAS</strong></a></li>
+            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>CILA EM CASA</strong></a></li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+    <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start   ">
+      <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4" @click="acord2 = ! acord2">
+        <h3 class="tw-text-white tw-text-base ">POLÍTICAS</h3>
+        <i class="fa-solid fa-plus tw-text-white lg:invisible"></i>
+      </button>
+      <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
+      <section id="menuOpitions" x-show="acord2">
+        <nav>
+          <ul>
+            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>ENTREGA E DEVOLUÇÃO</strong></a></li>
+            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>ENTREGA E FRETE</strong></a></li>
+            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>TERMOS DE USO</strong></a></li>
+            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>PRIVACIDADE</strong></a></li>
+          </ul>
+        </nav>
+      </section>
+    </div> 
+    <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start  ">
+      <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4"  @click="acord3 = ! acord3">
+      <h3 class="text-white tw-text-base ">SOBRE NÓS</h3>
+      <i class="fa-solid fa-plus text-white lg:invisible"></i>
+      </button>
+      <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
+      <section id="menuOpitions" x-show="acord3">
+        <nav>
+          <ul>
+            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>QUEM SOMOS</strong></a></li>
+            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>NOSSA HISTÓRIA</strong></a></li>
+            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>NOSSA FÁBRICA</strong></a></li>
+            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>PRÁTICAS REPONSÁVEIS</strong></a></li>
+            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>NOSSA LOJA</strong></a></li>
+          </ul>
+        </nav>
+      </section>
+    </div> 
+    <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700  py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start  ">
+      <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4" @click="acord4 = ! acord4">
+      <h3 class="text-white tw-text-base ">CONTATO</h3>
+      <i class="fa-solid fa-plus text-white lg:invisible" x-if="false"></i>
+      </button>
+      <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
+      <section id="menuOpitions" x-show="acord4">
+        <div id="textContact" class="text-white mb-3">
+        <p>(31)2555-7566 - 11h ás 19h</p>
+        <p>(31)99142-4956 - 10h ás 17h</p>
+        <p>cila@cila.com.br</p>
+        <p>troca@cila.com.br</p>
         </div>
-        <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start   ">
-          <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4" @click="acord2 = ! acord2">
-            <h3 class="tw-text-white tw-text-base ">POLÍTICAS</h3>
-            <i class="fa-solid fa-plus tw-text-white lg:invisible"></i>
-          </button>
-          <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
-          <section id="menuOpitions" x-show="acord2">
-            <nav>
-              <ul>
-                <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>ENTREGA E DEVOLUÇÃO</strong></a></li>
-                <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>ENTREGA E FRETE</strong></a></li>
-                <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>TERMOS DE USO</strong></a></li>
-                <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>PRIVACIDADE</strong></a></li>
-              </ul>
-            </nav>
-          </section>
-        </div> 
-        <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start  ">
-          <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4"  @click="acord3 = ! acord3">
-          <h3 class="text-white tw-text-base ">SOBRE NÓS</h3>
-          <i class="fa-solid fa-plus text-white lg:invisible"></i>
-          </button>
-          <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
-          <section id="menuOpitions" x-show="acord3">
-            <nav>
-              <ul>
-                <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>QUEM SOMOS</strong></a></li>
-                <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>NOSSA HISTÓRIA</strong></a></li>
-                <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>NOSSA FÁBRICA</strong></a></li>
-                <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>PRÁTICAS REPONSÁVEIS</strong></a></li>
-                <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>NOSSA LOJA</strong></a></li>
-              </ul>
-            </nav>
-          </section>
-        </div> 
-        <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700  py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start  ">
-          <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4" @click="acord4 = ! acord4">
-          <h3 class="text-white tw-text-base ">CONTATO</h3>
-          <i class="fa-solid fa-plus text-white lg:invisible" x-if="false"></i>
-          </button>
-          <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
-          <section id="menuOpitions" x-show="acord4">
-           <div id="textContact" class="text-white mb-3">
-            <p>(31)2555-7566 - 11h ás 19h</p>
-            <p>(31)99142-4956 - 10h ás 17h</p>
-            <p>cila@cila.com.br</p>
-            <p>troca@cila.com.br</p>
-           </div>
-           <div id="textContact" class="text-white mb-3">
-            <p>Horário de funcionamento da loja física:</p>
-            <p>Segunda á Sexta - 10h ás 19h</p>
-            <p>Sábado - 9h ás 14h</p>
-           </div>
-           <div id="social" class="tw-flex tw-gap-4">
-            <i><a href="#"><img src="./img/icon/insta.svg" alt=""></a></i>
-            <i><a href="#"><img src="./img/icon/fac.svg" alt=""></a></i>
-           </div>
-          </section>
+        <div id="textContact" class="text-white mb-3">
+        <p>Horário de funcionamento da loja física:</p>
+        <p>Segunda á Sexta - 10h ás 19h</p>
+        <p>Sábado - 9h ás 14h</p>
+        </div>
+        <div id="social" class="tw-flex tw-gap-4">
+        <i><a href="#"><img src="./img/icon/insta.svg" alt=""></a></i>
+        <i><a href="#"><img src="./img/icon/fac.svg" alt=""></a></i>
         </div>
       </section>
-      <section id="acepts" class=" tw-px-4 tw-py-4 tw-mb-4 lg:tw-flex lg:tw-items-center lg:tw-gap-5 lg:tw-justify-between">
-        <div id="divider" class="lg:tw-flex lg:tw-items-center lg:tw-gap-4">
-          <div id="cards" class="tw-mb-4">
-            <ul class="tw-flex tw-justify-between tw-items-center lg:tw-gap-2">
-              <li><img src="./img/icon/image2.svg" alt=""></li>
-              <li><img src="./img/icon/image3.svg" alt=""></li>
-              <li><img src="./img/icon/image4.svg" alt=""></li>
-              <li><img src="./img/icon/image5.svg" alt=""></li>
-              <li><img src="./img/icon/image6.svg" alt=""></li>
-              <li><img src="./img/icon/image7.svg" alt=""></li>
-            </ul>
-          </div>
-          <div id="protected" class="tw-flex tw-items-center tw-justify-center tw-pb-4 tw-cursor-pointer tw-border-b tw-border-slate-300 lg:tw-border-none  ">
-            <img src="./img/icon/image8.svg" class="" alt="">
-          </div>
-        </div>
-        <div id="textFooter" class="tw-flex tw-items-center tw-px-4 tw-py-4 lg:tw-order-first lg:tw-w-4/12 lg:tw-text-left">
-          <p class="tw-text-center lg:tw-text-left">
-            CONFECÇÕES CILA LTDA - 20.508.867/0001-60
-            Av. do Contorno, 6181, Savassi - Belo Horizonte - MG - CEP:30.110-110
-          </p>
-        </div>
-      </section>
-    </footer>
+    </div>
+  </section>
+  <section id="acepts" class=" tw-px-4 tw-py-4 tw-mb-4 lg:tw-flex lg:tw-items-center lg:tw-gap-5 lg:tw-justify-between">
+    <div id="divider" class="lg:tw-flex lg:tw-items-center lg:tw-gap-4">
+      <div id="cards" class="tw-mb-4">
+        <ul class="tw-flex tw-justify-between tw-items-center lg:tw-gap-2">
+          <li><img src="./img/icon/image2.svg" alt=""></li>
+          <li><img src="./img/icon/image3.svg" alt=""></li>
+          <li><img src="./img/icon/image4.svg" alt=""></li>
+          <li><img src="./img/icon/image5.svg" alt=""></li>
+          <li><img src="./img/icon/image6.svg" alt=""></li>
+          <li><img src="./img/icon/image7.svg" alt=""></li>
+        </ul>
+      </div>
+      <div id="protected" class="tw-flex tw-items-center tw-justify-center tw-pb-4 tw-cursor-pointer tw-border-b tw-border-slate-300 lg:tw-border-none  ">
+        <img src="./img/icon/image8.svg" class="" alt="">
+      </div>
+    </div>
+    <div id="textFooter" class="tw-flex tw-items-center tw-px-4 tw-py-4 lg:tw-order-first lg:tw-w-4/12 lg:tw-text-left">
+      <p class="tw-text-center lg:tw-text-left">
+        CONFECÇÕES CILA LTDA - 20.508.867/0001-60
+        Av. do Contorno, 6181, Savassi - Belo Horizonte - MG - CEP:30.110-110
+      </p>
+    </div>
+  </section>
+</footer>
     <script src="https://kit.fontawesome.com/d951250582.js" crossorigin="anonymous"></script>
 </body>
 </html>
