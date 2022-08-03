@@ -598,8 +598,16 @@ body {
   right: 50%;
 }
 
+.tw-top-52 {
+  top: 13rem;
+}
+
 .tw-z-50 {
   z-index: 50;
+}
+
+.tw-m-4 {
+  margin: 1rem;
 }
 
 .tw-my-10 {
@@ -662,18 +670,6 @@ body {
   margin-top: 1rem;
 }
 
-.tw-mr-2 {
-  margin-right: 0.5rem;
-}
-
-.tw-ml-10 {
-  margin-left: 2.5rem;
-}
-
-.tw-mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .tw-mb-8 {
   margin-bottom: 2rem;
 }
@@ -726,12 +722,8 @@ body {
   height: 5rem;
 }
 
-.tw-h-360 {
-  height: 22.5rem;
-}
-
-.tw-h-4 {
-  height: 1rem;
+.tw-h-auto {
+  height: auto;
 }
 
 .tw-w-full {
@@ -758,12 +750,20 @@ body {
   width: 10rem;
 }
 
+.tw-w-16 {
+  width: 4rem;
+}
+
 .tw-w-242 {
   width: 15.125rem;
 }
 
-.tw-w-4 {
-  width: 1rem;
+.tw-min-w-197\/1 {
+  min-width: 12.313rem;
+}
+
+.tw-min-w-242 {
+  min-width: 15.125rem;
 }
 
 .tw-max-w-4xl {
@@ -830,8 +830,12 @@ body {
   overflow: auto;
 }
 
-.tw-rounded {
-  border-radius: 0.25rem;
+.tw-overflow-hidden {
+  overflow: hidden;
+}
+
+.tw-overflow-x-auto {
+  overflow-x: auto;
 }
 
 .tw-border {
@@ -886,6 +890,10 @@ body {
   background-color: rgb(231 229 228 / var(--tw-bg-opacity));
 }
 
+.tw-bg-black\/30 {
+  background-color: rgb(0 0 0 / 0.3);
+}
+
 .tw-bg-slate-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
@@ -897,10 +905,6 @@ body {
 
 .tw-bg-center {
   background-position: center;
-}
-
-.tw-fill-current {
-  fill: currentColor;
 }
 
 .tw-p-4 {
@@ -970,10 +974,6 @@ body {
   padding-bottom: 1rem;
 }
 
-.tw-pl-96 {
-  padding-left: 24rem;
-}
-
 .tw-text-center {
   text-align: center;
 }
@@ -986,6 +986,10 @@ body {
 .tw-text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.tw-text-40xl {
+  font-size: 2.5rem;
 }
 
 .tw-text-lg {
@@ -1022,8 +1026,12 @@ body {
   line-height: 1.25rem;
 }
 
+.tw-tracking-widdest {
+  letter-spacing: 1.2em;
+}
+
 .tw-tracking-widest {
-  letter-spacing: 0.1em;
+  letter-spacing: .25em;
 }
 
 .tw-text-gray-900 {
@@ -1080,11 +1088,6 @@ body {
   border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.hover\:tw-bg-gray-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
 .hover\:tw-font-bold:hover {
   font-weight: 700;
 }
@@ -1113,10 +1116,6 @@ body {
 
   .md\:tw-flex-row {
     flex-direction: row;
-  }
-
-  .md\:tw-flex-col {
-    flex-direction: column;
   }
 
   .md\:tw-items-center {
@@ -1177,6 +1176,14 @@ body {
     width: 33.333333%;
   }
 
+  .lg\:tw-min-w-0 {
+    min-width: 0px;
+  }
+
+  .lg\:tw-max-w-305 {
+    max-width: 19.063rem;
+  }
+
   .lg\:tw-flex-col {
     flex-direction: column;
   }
@@ -1220,5 +1227,11 @@ body {
 
   .lg\:tw-text-left {
     text-align: left;
+  }
+}
+
+@media (min-width: 1366px) {
+  .xl\:tw-max-w-197\/1 {
+    max-width: 12.313rem;
   }
 }

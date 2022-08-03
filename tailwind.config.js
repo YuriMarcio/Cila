@@ -15,10 +15,19 @@ module.exports = {
         '500': '32.188rem',
         '85' : '5.313rem',
         '242': '15.125rem',
-        '630': '39.375rem'
+        '630': '39.375rem',
+        '197': '12.313rem',
+      },
+      minWidth: {
+        '197/1': '12.313rem',
+        '242': '15.125rem',
       },
       maxWidth: {
+        '197/1': '12.313rem',
+        '120/1': '7.5rem',
         '630/1': '39.375rem',
+        '190': '11.875rem',
+        '305': '19.063rem',
       },
       height: {
         '126': '26.938rem',
@@ -33,6 +42,20 @@ module.exports = {
       },
       left: {
         '4x4': '80%',
+      },
+      letterSpacing: {
+        tightest: '-.075em',
+        tighter: '-.05em',
+        tight: '-.025em',
+        normal: '0',
+        wide: '.025em',
+        wider: '.05em',
+        widest: '.1em',
+        widest: '.25em',
+        widdest: '1.2em'
+      },
+      fontSize: {
+       '40xl' : '2.5rem'
       }
     },
     screens: {
