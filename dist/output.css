@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.1.6 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -355,13 +355,6 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   /* 2 */
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
@@ -602,72 +595,8 @@ body {
   top: 13rem;
 }
 
-.tw-left-72 {
-  left: 18rem;
-}
-
-.tw-left-1\/4 {
-  left: 25%;
-}
-
-.tw-left-1\/3 {
-  left: 33.333333%;
-}
-
-.tw-top-1\/2 {
-  top: 50%;
-}
-
-.tw-top-60 {
-  top: 15rem;
-}
-
-.tw-top-28 {
-  top: 7rem;
-}
-
-.tw-top-10 {
-  top: 2.5rem;
-}
-
-.tw-top-8 {
-  top: 2rem;
-}
-
-.tw-top-6 {
-  top: 1.5rem;
-}
-
-.tw-top-5 {
-  top: 1.25rem;
-}
-
-.tw-top-16 {
-  top: 4rem;
-}
-
-.tw-top-1 {
-  top: 0.25rem;
-}
-
-.tw-top-1\/4 {
-  top: 25%;
-}
-
 .tw-top-1\/3 {
   top: 33.333333%;
-}
-
-.tw-left-40 {
-  left: 10rem;
-}
-
-.tw-left-8 {
-  left: 2rem;
-}
-
-.tw-left-5 {
-  left: 1.25rem;
 }
 
 .tw-left-4 {
@@ -699,11 +628,6 @@ body {
 .tw-my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-}
-
-.tw-my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .tw-ml-4 {
@@ -744,10 +668,6 @@ body {
 
 .tw-mt-4 {
   margin-top: 1rem;
-}
-
-.tw-mb-8 {
-  margin-bottom: 2rem;
 }
 
 .tw-flex {
@@ -802,8 +722,8 @@ body {
   height: auto;
 }
 
-.tw-h-full {
-  height: 100%;
+.tw-h-26 {
+  height: 1.625rem;
 }
 
 .tw-w-full {
@@ -832,6 +752,14 @@ body {
 
 .tw-w-16 {
   width: 4rem;
+}
+
+.tw-w-468 {
+  width: 29.25rem;
+}
+
+.tw-w-26 {
+  width: 1.625rem;
 }
 
 .tw-min-w-242 {
@@ -875,10 +803,6 @@ body {
   align-items: center;
 }
 
-.tw-justify-start {
-  justify-content: flex-start;
-}
-
 .tw-justify-center {
   justify-content: center;
 }
@@ -893,18 +817,6 @@ body {
 
 .tw-gap-y-8 {
   row-gap: 2rem;
-}
-
-.tw-space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.tw-space-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .tw-overflow-auto {
@@ -942,6 +854,11 @@ body {
   border-color: rgb(203 213 225 / var(--tw-border-opacity));
 }
 
+.tw-border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
 .tw-bg-slate-900\/80 {
   background-color: rgb(15 23 42 / 0.8);
 }
@@ -966,6 +883,11 @@ body {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.tw-bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
 .tw-bg-stone-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(231 229 228 / var(--tw-bg-opacity));
@@ -980,9 +902,19 @@ body {
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
-.tw-bg-red-700 {
+.tw-bg-pink-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+  background-color: rgb(219 39 119 / var(--tw-bg-opacity));
+}
+
+.tw-bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
+
+.tw-bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
 .tw-bg-cover {
@@ -991,6 +923,11 @@ body {
 
 .tw-bg-center {
   background-position: center;
+}
+
+.tw-object-scale-down {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .tw-p-4 {
@@ -1080,11 +1017,6 @@ body {
 
 .tw-text-lg {
   font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.tw-text-xl {
-  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -1188,10 +1120,6 @@ body {
     display: block;
   }
 
-  .md\:tw-flex {
-    display: flex;
-  }
-
   .md\:tw-hidden {
     display: none;
   }
@@ -1202,14 +1130,6 @@ body {
 
   .md\:tw-flex-row {
     flex-direction: row;
-  }
-
-  .md\:tw-items-center {
-    align-items: center;
-  }
-
-  .md\:tw-justify-center {
-    justify-content: center;
   }
 }
 
