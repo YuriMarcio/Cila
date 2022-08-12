@@ -8,6 +8,7 @@ module.exports = {
         'body': ['"Open Sans"',],
       },
       width: {
+        '14': '0.875rem',
         '18': '32rem',
         '76': '19.5rem',
         '70': '4.375rem',
@@ -45,6 +46,7 @@ module.exports = {
         '366': '22.875rem',
         '360': '22.5rem',
         '26' : '1.625rem',
+        '70': '4.375rem',
       },
       boxShadow: {
         '3xl': '0 -8px 35px -8px rgba(0, 0, 0, 0.8)',
@@ -70,6 +72,9 @@ module.exports = {
     screens: {
       'sm': '360px',
       // => @media (min-width: 640px) { ... }
+
+      'nd': '472px',
+      // => @media (min-width: 1024px) { ... }
 
       'md': '744px',
       // => @media (min-width: 768px) { ... }
