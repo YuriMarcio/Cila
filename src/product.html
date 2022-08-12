@@ -15,7 +15,7 @@
 <body>
     <header>
         <section id="navgation" class="tw-w-full tw-bg-cover tw-bg-center">
-          <nav id="menu" class="tw-w-full tw-h-16 tw-bg-slate-900/80 tw-px-4 tw-flex tw-items-center md:tw-h-20 tw-relative" x-data="{open: false,bag: false,dropdow:false}">
+          <nav id="menu" class="tw-w-full tw-h-16 tw-bg-slate-900/80 tw-px-4 tw-flex tw-items-center md:tw-h-20" x-data="{open: false,bag: false,dropdow:false}">
             <button id="menu-icon-mobile lg:" @click="open = ! open">
               <img src="./img/icon/menu.svg" class="tw-h-6 md:tw-hidden " alt="">
             </button>
@@ -23,7 +23,7 @@
               <img src="./img/logo/logo_cila.svg" alt="" class="md:tw-hidden tw-h-30">
               <img src="./img/logo/logoComplet.svg" alt="" class=" tw-hidden  md:tw-block ">
             </div>
-            <div id="iconMenu" class="tw-absolute  ">
+            <div id="iconMenu" class="tw-absolute tw-right-1 ">
               <ul class="tw-flex tw-items-end ">
                 <li class="tw-p-4"><a href="#"><img src="./img/icon/searchicon-menu.svg" alt="" class="tw-w-5"></a></li>
                 <li class="tw-p-4"><a href="#"><img src="./img/icon/profileicon-menu.svg" alt="" class="tw-w-5"></a></li>
@@ -47,8 +47,8 @@
                 <button id="close" class="tw-absolute tw-left-2/4 tw-ml-28 tw-top-0 tw-p-4 tw-bg-white tw-z-50" @click="open = ! open">
                   <img src="./img/icon/close.svg" alt="" >
                 </button>
-                <nav id="navgation" class=" tw-w-76 tw-bg-white lg:tw-init snap-y ">
-                    <ul class="text-black tw-h-96 text-base lg:flex lg:text-white lg:justify-center lg:items-center  snap-y snap-mandatory overflow-y-auto ">
+                <nav id="navgation" class=" tw-w-76 tw-bg-white lg:tw-init tw-snap-y ">
+                    <ul class="tw-text-black tw-h-96 tw-text-base lg:flex lg:text-white lg:justify-center lg:items-center tw-snap-y tw-snap-mandatory tw-overflow-hidden ">
                       <li>
                         <a href="#" class="tw-flex tw-justify-between tw-py-3 tw-px-4">
                           <p class="">NEW</p> 
@@ -289,91 +289,96 @@
   </section>
   </header>
 <main> 
-    <section id="payment" class=" tw-hidden tw-w-full tw-bg-stone-200  tw-h-20 tw-flex tw-justify-center lg:tw-justify-between lg:tw-block tw-items-center tw-mb-4 tw-p-7">
-        <p id="paymentText" class=""><strong>PARCELAMENTO</strong> EM ATÉ <strong>4x</strong></p>
-        <p id="paymentText" class="tw-hidden lg:tw-block"><strong>FRETE GRÁTIS</strong> A PARTIR DE R$ 350,00</p>
-        <p id="paymentText" class="tw-hidden lg:tw-block"><strong>10% OFF</strong> NA PRIMEIRA COMPRA</p>
-    </section>
-    <section id="item-product" class="tw-flex tw-flex-col tw-justify-center tw-items-center ">
-      <div id="img-product" class="tw-py-5 sm:tw-w-468 sm:tw-object-none tw-object-scale-down">
-       
-       
-      </div>
-    </section>
-    <section id="detail-product" class="tw-px-4">
-      <div id="title-product" class="tw-mb-4">
-        <h1 class="tw-font-bold tw-mb-4 tw-text-xl">CALCINHA HOT PANT CAVADA</h1>
-        <span class="tw-text-slate-600">REF.: HF0S8FH0DSF</span>
-      </div>
-      <div id="price-product" class="tw-mb-4">
-        <p class="tw-leading-6">
-          <b class="tw-text-bold">R$444,00</b><br> OU EM 4X DE R$111,00
-        </p>
-      </div>
-      <div id="select-detail-product">
-        <div id="color-product" class="tw-mb-8">
-          <h4 class="tw-text-slate-600 tw-mb-2">SELECIONE A COR</h4>
-          <div id="color">
-            <ul class="tw-flex tw-gap-4">
-              <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black"><div class="tw-w-26 tw-h-26 tw-bg-black"></div></button></li>
-              <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black"><div class="tw-w-26 tw-h-26 tw-bg-pink-600"></div></button></li>
-              <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black"><div class="tw-w-26 tw-h-26 tw-bg-yellow-400"></div></button></li>
-            </ul>
-          </div>
-        </div>
-        <div id="size-product" class="tw-mb-8">
-          <h4 class="tw-text-slate-600 tw-mb-2">SELECIONE O TAMANHO</h4>
-          <div id="size">
-            <ul class="tw-flex tw-gap-4">
-              <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black focus:tw-font-bold"><div class="tw-w-26 tw-h-26">PP</div></button></li>
-              <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black focus:tw-font-bold"><div class="tw-w-26 tw-h-26">P</div></button></li>
-              <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black focus:tw-font-bold"><div class="tw-w-26 tw-h-26">M</div></button></li>
-              <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black focus:tw-font-bold"><div class="tw-w-26 tw-h-26">G</div></button></li>
-              <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black focus:tw-font-bold"><div class="tw-w-26 tw-h-26">GG</div></button></li>
-            </ul>
-          </div>
-        </div>
-        <button class="tw-w-full tw-border tw-border-black tw-bg-black tw-text-white tw-py-4 tw-flex tw-justify-center tw-items-center tw-gap-2 tw-mb-8 ">
-          <img src="./img/icon/bagwhite.svg" alt="" class="tw-w-14"> 
-          <p>ADICIONAR À SACOLA</p>
-        </button>
-        <div id="cep" class="tw-relative tw-mb-12">
-          <h4 class="tw-text-slate-600 tw-mb-2">CALCULAR FRETE</h4>
-          <input name="" id="" placeholder="insira seu CEP" class="tw-w-full tw-py-4 tw-px-5 tw-border tw-mb-4">
-          <button class="tw-py-2 tw-px-4 tw-border tw-border-black tw-text-xs tw-absolute tw-right-2 tw-top-11"><span>CALCULAR</span></button>
-          <a href="#" class="tw-underline tw-text-xs">NÃO SEI MEU CEP</a>
-        </div>
-        <div id="info-product">
-          <ul>
-            <li class="tw-pb-4 tw-border-b-2 tw-border-black">
-              <div id="head-info" class="tw-flex tw-justify-between tw-items-center tw-py-4">
-                <h1 class="tw-text-sm">DESCRIÇÃO PRODUTO</h1> <img src="./img/icon/more.svg" alt="" class="tw-w-14">
-              </div>
-              <div id="descricao-info">
-                <p class="tw-text-slate-600 tw-text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices est, pharetra, eleifend turpis vitae lorem. Mauris varius egestas dui diam. Maecenas in suspendisse turpis dui. Morbi rutrum mollis ultricies tellus quisque aliquam ut orci, ullamcorper. Sagittis, fermentum, vulputate aliquet montes, integer sit auctor sociis. A, euismod quisque neque magna quis nam tellus tincidunt. Sit nunc sem ultricies tempus laoreet ut.</p>
-              </div>
-            </li>
-            <li class="tw-pb-4 tw-border-b-2 tw-border-black">
-              <div id="head-info" class="tw-flex tw-justify-between tw-items-center tw-py-4">
-                <h1 class="tw-text-sm">DESCRIÇÃO PRODUTO</h1> <img src="./img/icon/more.svg" alt="" class="tw-w-14">
-              </div>
-              <div id="descricao-info">
-                <p class="tw-text-slate-600 tw-text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices est, pharetra, eleifend turpis vitae lorem. Mauris varius egestas dui diam. Maecenas in suspendisse turpis dui. Morbi rutrum mollis ultricies tellus quisque aliquam ut orci, ullamcorper. Sagittis, fermentum, vulputate aliquet montes, integer sit auctor sociis. A, euismod quisque neque magna quis nam tellus tincidunt. Sit nunc sem ultricies tempus laoreet ut.</p>
-              </div>
-            </li>
-            <li class="tw-pb-4  ">
-              <div id="head-info" class="tw-flex tw-justify-between tw-items-center tw-py-4">
-                <h1 class="tw-text-sm">DESCRIÇÃO PRODUTO</h1> <img src="./img/icon/more.svg" alt="" class="tw-w-14">
-              </div>
-              <div id="descricao-info">
-                <p class="tw-text-slate-600 tw-text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices est, pharetra, eleifend turpis vitae lorem. Mauris varius egestas dui diam. Maecenas in suspendisse turpis dui. Morbi rutrum mollis ultricies tellus quisque aliquam ut orci, ullamcorper. Sagittis, fermentum, vulputate aliquet montes, integer sit auctor sociis. A, euismod quisque neque magna quis nam tellus tincidunt. Sit nunc sem ultricies tempus laoreet ut.</p>
-              </div>
-            </li>
+  <section id="payment" class=" lg:tw-w-full  lg:tw-bg-stone-200  lg:tw-h-20 lg:tw-flex lg:tw-justify-center lg:tw-justify-between lg:tw-items-center lg:tw-mb-8 tw-p-7 tw-hidden lg:tw-block">
+    <p id="paymentText" class="tw-hidden lg:tw-block"><strong>PARCELAMENTO</strong> EM ATÉ <strong>4x</strong></p>
+    <p id="paymentText" class="tw-hidden lg:tw-block"><strong>FRETE GRÁTIS</strong> A PARTIR DE R$ 350,00</p>
+    <p id="paymentText" class="tw-hidden lg:tw-block"><strong>10% OFF</strong> NA PRIMEIRA COMPRA</p>
+   </section>
+<div class="lg:tw-flex lg:tw-items-start lg:tw-p-10 ">
+  <section id="item-product" class="tw-flex tw-flex-col lg:tw-flex-row tw-justify-center tw-items-center lg:tw-justify-start lg:tw-items-start lg:tw-gap-8">
+    <div id="img-subproduct">
+      <img src="./img/produtos/clothing2.png" alt="" class="lg:tw-min-w-0 lg:tw-max-w-193 tw-mb-4">
+      <img src="./img/produtos/clothing2.png" alt="" class="lg:tw-min-w-0 lg:tw-max-w-193 ">
+    </div>
+    <div id="img-product" class="tw-py-5 lg:tw-p-0 sm:tw-w-468 sm:tw-object-none tw-object-scale-down">
+      <img src="./img/produtos/clothing2.png" alt="" class="tw-w-468 tw-mb-4 lg:tw-min-w-0 lg:tw-max-w-521">
+    </div>
+  </section>
+  <section id="detail-product" class="tw-px-4 lg:tw-min-w-360 lg:tw-max-w-460">
+    <div id="title-product" class="tw-mb-4">
+      <h1 class="tw-font-bold tw-mb-4 tw-text-xl">CALCINHA HOT PANT CAVADA</h1>
+      <span class="tw-text-slate-600">REF.: HF0S8FH0DSF</span>
+    </div>
+    <div id="price-product" class="tw-mb-4">
+      <p class="tw-leading-6">
+        <b class="tw-text-bold">R$444,00</b><br> OU EM 4X DE R$111,00
+      </p>
+    </div>
+    <div id="select-detail-product">
+      <div id="color-product" class="tw-mb-8">
+        <h4 class="tw-text-slate-600 tw-mb-2">SELECIONE A COR</h4>
+        <div id="color">
+          <ul class="tw-flex tw-gap-4">
+            <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black"><div class="tw-w-26 tw-h-26 tw-bg-black"></div></button></li>
+            <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black"><div class="tw-w-26 tw-h-26 tw-bg-pink-600"></div></button></li>
+            <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black"><div class="tw-w-26 tw-h-26 tw-bg-yellow-400"></div></button></li>
           </ul>
         </div>
       </div>
-    </section>
-    <div id="products" class="tw-mb-10 tw-overflow-x-auto">
+      <div id="size-product" class="tw-mb-8">
+        <h4 class="tw-text-slate-600 tw-mb-2">SELECIONE O TAMANHO</h4>
+        <div id="size">
+          <ul class="tw-flex tw-gap-4">
+            <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black focus:tw-font-bold"><div class="tw-w-26 tw-h-26">PP</div></button></li>
+            <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black focus:tw-font-bold"><div class="tw-w-26 tw-h-26">P</div></button></li>
+            <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black focus:tw-font-bold"><div class="tw-w-26 tw-h-26">M</div></button></li>
+            <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black focus:tw-font-bold"><div class="tw-w-26 tw-h-26">G</div></button></li>
+            <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black focus:tw-font-bold"><div class="tw-w-26 tw-h-26">GG</div></button></li>
+          </ul>
+        </div>
+      </div>
+      <button class="tw-w-full tw-border tw-border-black tw-bg-black tw-text-white tw-py-4 tw-flex tw-justify-center tw-items-center tw-gap-2 tw-mb-8 ">
+        <img src="./img/icon/bagwhite.svg" alt="" class="tw-w-14"> 
+        <p>ADICIONAR À SACOLA</p>
+      </button>
+      <div id="cep" class="tw-relative tw-mb-12">
+        <h4 class="tw-text-slate-600 tw-mb-2">CALCULAR FRETE</h4>
+        <input name="" id="" placeholder="insira seu CEP" class="tw-w-full tw-py-4 tw-px-5 tw-border tw-mb-4">
+        <button class="tw-py-2 tw-px-4 tw-border tw-border-black tw-text-xs tw-absolute tw-right-2 tw-top-11"><span>CALCULAR</span></button>
+        <a href="#" class="tw-underline tw-text-xs">NÃO SEI MEU CEP</a>
+      </div>
+      <div id="info-product">
+        <ul>
+          <li class="tw-pb-4 tw-border-b-2 tw-border-black">
+            <div id="head-info" class="tw-flex tw-justify-between tw-items-center tw-py-4">
+              <h1 class="tw-text-sm">DESCRIÇÃO PRODUTO</h1> <img src="./img/icon/more.svg" alt="" class="tw-w-14">
+            </div>
+            <div id="descricao-info">
+              <p class="tw-text-slate-600 tw-text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices est, pharetra, eleifend turpis vitae lorem. Mauris varius egestas dui diam. Maecenas in suspendisse turpis dui. Morbi rutrum mollis ultricies tellus quisque aliquam ut orci, ullamcorper. Sagittis, fermentum, vulputate aliquet montes, integer sit auctor sociis. A, euismod quisque neque magna quis nam tellus tincidunt. Sit nunc sem ultricies tempus laoreet ut.</p>
+            </div>
+          </li>
+          <li class="tw-pb-4 tw-border-b-2 tw-border-black">
+            <div id="head-info" class="tw-flex tw-justify-between tw-items-center tw-py-4">
+              <h1 class="tw-text-sm">DESCRIÇÃO PRODUTO</h1> <img src="./img/icon/more.svg" alt="" class="tw-w-14">
+            </div>
+            <div id="descricao-info">
+              <p class="tw-text-slate-600 tw-text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices est, pharetra, eleifend turpis vitae lorem. Mauris varius egestas dui diam. Maecenas in suspendisse turpis dui. Morbi rutrum mollis ultricies tellus quisque aliquam ut orci, ullamcorper. Sagittis, fermentum, vulputate aliquet montes, integer sit auctor sociis. A, euismod quisque neque magna quis nam tellus tincidunt. Sit nunc sem ultricies tempus laoreet ut.</p>
+            </div>
+          </li>
+          <li class="tw-pb-4  ">
+            <div id="head-info" class="tw-flex tw-justify-between tw-items-center tw-py-4">
+              <h1 class="tw-text-sm">DESCRIÇÃO PRODUTO</h1> <img src="./img/icon/more.svg" alt="" class="tw-w-14">
+            </div>
+            <div id="descricao-info">
+              <p class="tw-text-slate-600 tw-text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices est, pharetra, eleifend turpis vitae lorem. Mauris varius egestas dui diam. Maecenas in suspendisse turpis dui. Morbi rutrum mollis ultricies tellus quisque aliquam ut orci, ullamcorper. Sagittis, fermentum, vulputate aliquet montes, integer sit auctor sociis. A, euismod quisque neque magna quis nam tellus tincidunt. Sit nunc sem ultricies tempus laoreet ut.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+</div>
+</section>
+    <div id="products" class="tw-mb-10">
       <div class="tw-flex tw-justify-center tw-my-10 tw-text-base tw-font-bold tw-tracking-widest">
         <h1>ESCRITA EMARANHADA</h1>
       </div>
