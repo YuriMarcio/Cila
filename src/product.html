@@ -289,19 +289,19 @@
   </section>
   </header>
 <main> 
-  <section id="payment" class=" lg:tw-w-full tw-flex lg:tw-justify-center lg:tw-items-center lg:tw-h-20 tw-hidden lg:tw-block lg:tw-px-10">
+  <section id="payment" class=" lg:tw-w-full tw-flex lg:tw-justify-center lg:tw-items-center lg:tw-h-20 tw-hidden lg:tw-block lg:tw-px-10 lg:tw-mb-8">
     <div class="lg:tw-h-full lg:tw-flex lg:tw-justify-between lg:tw-items-center lg:tw-h-full tw-border-b ">
       <p id="paymentText" class="tw-hidden lg:tw-block"><strong>PARCELAMENTO</strong> EM ATÉ <strong>4x</strong></p>
       <p id="paymentText" class="tw-hidden lg:tw-block"><strong>FRETE GRÁTIS</strong> A PARTIR DE R$ 350,00</p>
       <p id="paymentText" class="tw-hidden lg:tw-block"><strong>10% OFF</strong> NA PRIMEIRA COMPRA</p>
     </div>
    </section>
-<div class="lg:tw-w-full lg:tw-flex lg:tw-p-3  ">
-  <section id="item-product" class="tw-w-full tw-flex tw-flex-col lg:tw-flex-row tw-justify-center tw-items-center lg:tw-justify-start lg:tw-items-start lg:tw-mr-5 tw-bg-blue-900 ">
+<div class=" lg:tw-w-full lg:tw-flex lg:tw-p-3  ">
+  <section id="item-product" class="tw-w-full tw-flex tw-flex-col lg:tw-flex-row tw-justify-center tw-items-center lg:tw-justify-start lg:tw-items-start lg:tw-mr-5 ">
     <div id="img-product-desktop" class="tw-hidden lg:tw-block lg:tw-w-full lg:tw-flex lg:tw-flex-row-reverse lg:tw-justify-center lg:tw-gap-5">
-      <img src="./img/produtos/clothing2.png" alt="" class=" lg:tw-max-w-521 lg:tw-min-w-330 lg:tw-min-h-496 lg:tw-shrink  tw-object-cover">
+      <img src="./img/produtos/clothing2.png" alt="" class=" lg:tw-max-w-521 lg:tw-min-w-330 lg:tw-shrink  tw-object-cover tw-w-full">
       <div>
-        <img src="./img/produtos/clothing2.png" alt="" class="tw-max-w-197/1 tw-min-w-120 tw-shrink">
+        <img src="./img/produtos/clothing2.png" alt="" class="tw-max-w-197/1 tw-min-w-120 tw-shrink tw-mb-4">
         <img src="./img/produtos/clothing2.png" alt="" class="tw-max-w-197/1 tw-min-w-120 tw-shrink">
       </div>
     </div>
@@ -335,7 +335,16 @@
     </div>
     <!--PRODUCT MOBILE -->
   </section>
-  <section id="detail-product" class=" lg:tw-bg-red-400 tw-ml-4">
+  <section id="detail-product" class="tw-w-7/12 tw-ml-4 tw-shrink ">
+    <div id="brad-product" class="tw-hidden lg:tw-block tw-my-3">
+      <ul class="tw-flex tw-justify-start tw-items-center tw-gap-2 tw-text-sm tw-text-gray-600 tw-font-bold">
+        <li>HOME</li>
+        <span class="tw-w-1 tw-h-1 tw-bg-slate-500"></span>
+        <li>BIQUÍNIS</li>
+        <span class="tw-w-1 tw-h-1 tw-bg-slate-500"></span>
+        <li>CALCINHA</li>
+      </ul>
+    </div>
     <div id="title-product" class="tw-mb-4">
       <h1 class="tw-font-bold tw-mb-4 tw-text-xl">CALCINHA HOT PANT CAVADA</h1>
       <span class="tw-text-slate-600">REF.: HF0S8FH0DSF</span>
@@ -399,7 +408,7 @@
           </li>
           <li class="tw-pb-4 tw-border-b-2 tw-border-black">
             <button id="head-info" class="tw-w-full tw-flex tw-justify-between tw-items-center tw-py-4" @click="acordinfo2 = ! acordinfo2">
-              <h1 class="tw-text-sm">DESCRIÇÃO PRODUTO</h1> 
+              <h1 class="tw-text-sm">COMPOSIÇÃO</h1> 
               <img src="./img/icon/moreB.svg" alt="" class="tw-w-14">
             </button>
             <div id="descricao-info" x-show="acordinfo2">
@@ -408,7 +417,7 @@
           </li>
           <li class="tw-pb-4  ">
             <button id="head-info" class="tw-w-full tw-flex tw-justify-between tw-items-center tw-py-4" @click="acordinfo3 = ! acordinfo3">
-              <h1 class="tw-text-sm">DESCRIÇÃO PRODUTO</h1> 
+              <h1 class="tw-text-sm">TABELA DE MEDIDAS</h1> 
               <img src="./img/icon/moreB.svg" alt="" class="tw-w-14">
             </button>
             <div id="descricao-info" x-show="acordinfo3">
