@@ -145,11 +145,13 @@
   <!-- NAVIGATION MOBILE -->
     
   <!-- NAVIGATION DESKTOP -->
-  <nav id="navgation-desktop" class="hidden  tw-flex tw-justify-center tw-items-center tw-overflow-hidden">
+  <nav id="navgation-desktop" class="hidden  tw-flex tw-justify-center tw-items-center ">
     <ul class="tw-max-w-4xl tw-text-white tw-flex tw-items-center tw-text-sm">
       <li class="">
         <a href="#" class="tw-py-3 tw-px-4">
-          <p class="tw-py-3 tw-px-4 y hover:tw-font-bold hover:tw-border-b-2 hover:tw-border-b-white ">NEW</p> 
+          <p class="tw-py-3 tw-px-4 y hover:tw-font-bold hover:tw-border-b-2 hover:tw-border-b-white ">
+            NEW
+          </p> 
         </a> 
       </li> 
       <li >
@@ -295,15 +297,15 @@
           <p id="paymentText" class="tw-hidden lg:tw-block"><strong>FRETE GRÁTIS</strong> A PARTIR DE R$ 350,00</p>
           <p id="paymentText" class="tw-hidden lg:tw-block"><strong>10% OFF</strong> NA PRIMEIRA COMPRA</p>
         </div>
-       </section>
+    </section>
     <section id="search" class="tw-flex tw-px-10 tw-border-r-4">
-        <section id="categories" class="tw-p-4">
-            <div id="dropdown-cat" class="tw-mb-11">
-                <button class="tw-w-289 tw-h-12 tw-bg-zinc-500"><p>ordenar por...</p> </button>
+        <section id="categories" class="tw-p-4 tw-border-r-2">
+            <div id="dropdown-cate" class="tw-min-w-197/1 tw-mb-11">
+                <button class="tw-w-full tw-h-12 tw-bg-zinc-200 tw-flex tw-justify-between tw-items-center tw-p-2"><p>ordenar por...</p> <img src="./img/icon/arrowdownW.svg" alt=""></button>
             </div>
             <nav class="tw-full">
                 <ul class="tw-w-full tw-flex tw-flex-col tw-justify-start tw-items-start">
-                    <li id="cate-filter" class="tw-w-full">
+                    <li id="cate-filter" class="tw-w-full tw-border-b-2">
                       <div class=" tw-flex tw-justify-between">
                           <h1 class="tw-font-bold">CATEGORIAS</h1>
                           <img src="img/icon/less.svg" alt="">
@@ -373,7 +375,7 @@
                         </ul>
                     </nav>   
                     </li>
-                    <li id="size-filter" class="tw-w-full">
+                    <li id="size-filter" class="tw-w-full tw-border-b-2">
                       <div class=" tw-flex tw-justify-between ">
                         <h1 class="tw-font-bold">TAMANHO</h1>
                         <img src="img/icon/less.svg" alt="">
@@ -403,13 +405,13 @@
                         </ul>
                       </nav>
                     </li>
-                    <li id="color-filter" class="tw-w-full">
+                    <li id="color-filter" class="tw-w-full tw-border-b-2">
                       <div class=" tw-flex tw-justify-between ">
                         <h1 class="tw-font-bold">COR</h1>
                         <img src="img/icon/less.svg" alt="">
                       </div>
                         <div id="color" class="tw-my-5">
-                          <ul class="tw-flex tw-gap-4">
+                          <ul class="tw-grid tw-grid-cols-3 lg:tw-grid-cols-7 tw-gap-5">
                             <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black"><div class="tw-w-26 tw-h-26 tw-bg-black"></div></button></li>
                             <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black"><div class="tw-w-26 tw-h-26 tw-bg-pink-600"></div></button></li>
                             <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black"><div class="tw-w-26 tw-h-26 tw-bg-yellow-400"></div></button></li>
@@ -453,16 +455,22 @@
                 </ul>
             </nav>
         </section>
-        <section id="prod-filter" class="">
-          <div id="brad">
-            
+        <section id="prod-filter" class="tw-mb-16 tw-w-full ">
+          <div id="brad-product" class="tw-hidden lg:tw-block tw-my-3 tw-ml-4">
+            <ul class="tw-flex tw-justify-start tw-items-center tw-gap-2 tw-text-sm tw-text-gray-600 tw-font-bold">
+              <li>HOME</li>
+              <span class="tw-w-1 tw-h-1 tw-bg-slate-500"></span>
+              <li>BIQUÍNIS</li>
+              <span class="tw-w-1 tw-h-1 tw-bg-slate-500"></span>
+              <li>CALCINHA</li>
+            </ul>
           </div>
           <h1 class="tw-font-bold tw-text-2xl tw-ml-4 tw-my-7">clássicos</h1>
-            <div id="products" class="">
-              <ul id="product-showcase" class="tw-w-full tw-relative tw-h-auto tw-grid tw-grid-cols-3 overflow-hidden">
-                  <li class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer tw-mx-4">
-                    <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
-                        <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
+            <div id="products" class="tw-mb-16 tw-relative">
+              <ul id="product-showcase" class="tw-w-full tw-relative tw-p-5 md:tw-p-0 tw-ml-4 tw-h-auto tw-grid  md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-justify-start lg:tw-justify-center tw-gap-4">
+                  <li class="  lg:tw-max-w-305 tw-cursor-pointer ">
+                    <a href="" class=" lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+                        <div id="product-img" class="  lg:tw-min-w-0 lg:tw-max-w-305">
                           <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
                         </div>
                         <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
@@ -472,9 +480,9 @@
                     </a>
                   </li>
 
-                  <li class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer tw-mx-4">
-                    <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
-                        <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
+                  <li class=" lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer ">
+                    <a href="" class=" lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+                        <div id="product-img" class="  lg:tw-min-w-0 lg:tw-max-w-305 ">
                           <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
                         </div>
                         <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
@@ -483,9 +491,10 @@
                         </div>
                     </a>
                   </li>
-                  <li class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer tw-mx-4">
-                    <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
-                        <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
+
+                  <li class=" lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer ">
+                    <a href="" class=" lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+                        <div id="product-img" class="  lg:tw-min-w-0 lg:tw-max-w-305 ">
                           <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
                         </div>
                         <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
@@ -494,9 +503,9 @@
                         </div>
                     </a>
                   </li>
-                  <li class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer tw-mx-4">
-                    <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
-                        <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
+                  <li class=" lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer ">
+                    <a href="" class=" lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+                        <div id="product-img" class="  lg:tw-min-w-0 lg:tw-max-w-305 ">
                           <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
                         </div>
                         <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
@@ -505,9 +514,20 @@
                         </div>
                     </a>
                   </li>
-                  <li class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer tw-mx-4">
-                    <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
-                        <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
+                  <li class=" lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer ">
+                    <a href="" class=" lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+                        <div id="product-img" class="  lg:tw-min-w-0 lg:tw-max-w-305 ">
+                          <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
+                        </div>
+                        <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
+                          <p class="">CALCINHA HOT PANT CAVADA FLUITY</p>
+                          <span class="tw-font-bold ">R$198,00</span>
+                        </div>
+                    </a>
+                  </li>
+                  <li class=" lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer ">
+                    <a href="" class=" lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+                        <div id="product-img" class="  lg:tw-min-w-0 lg:tw-max-w-305 ">
                           <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400">
                         </div>
                         <div id="product-title" class="tw-font-normal tw-leading-5 tw-text-sm tw-mt-4">
@@ -518,6 +538,35 @@
                   </li>
                 </ul>
             </div>
+            <nav id="pagination" aria-label="Page navigation" class="tw-w-full tw-flex tw-flex-col xl:tw-flex-row tw-gap-5 tw-items-end tw-justify-end">
+              <p>MOSTRANDO <b class="tw-font-bold">717 PRODUTOS</b> em <b class="tw-font-bold">60 PÁGINAS</b></p>
+              <ul class="tw-flex tw-gap-3">
+                <li>
+                  <a href="#" class="tw-py-2 tw-px-2 tw-leading-tight tw-text-gray-500 tw-bg-white tw-border tw-border-gray-500 hover:tw-bg-gray-100 hover:tw-text-gray-700 focus:tw-border-black focus:tw-text-black ">PRIMEIRA</a>
+                </li>
+                <li>
+                  <a href="#" class="tw-py-2 tw-px-3 tw-leading-tight tw-text-gray-500 tw-bg-white tw-border tw-border-gray-500 hover:tw-bg-gray-100 hover:tw-text-gray-700 focus:tw-border-black focus:tw-text-black ">1</a>
+                </li>
+                <li>
+                  <a href="#" class="tw-py-2 tw-px-3 tw-leading-tight tw-text-gray-500 tw-bg-white tw-border tw-border-gray-500 hover:tw-bg-gray-100 hover:tw-text-gray-700 focus:tw-border-black focus:tw-text-black ">2</a>
+                </li>
+                <li>
+                  <a href="#" class="tw-py-2 tw-px-3 tw-leading-tight tw-text-gray-500 tw-bg-white tw-border tw-border-gray-500 hover:tw-bg-gray-100 hover:tw-text-gray-700 focus:tw-border-black focus:tw-text-black ">3</a>
+                </li>
+                <li>
+                  <a href="#" class="tw-py-2 tw-px-3 tw-leading-tight tw-text-gray-500 tw-bg-white tw-border tw-border-gray-500 hover:tw-bg-gray-100 hover:tw-text-gray-700 focus:tw-border-black focus:tw-text-black  ">4</a>
+                </li>
+                <li>
+                  <a href="#" class="tw-py-2 tw-px-3 tw-leading-tight tw-text-gray-500 tw-bg-white tw-border tw-border-gray-500 hover:tw-bg-gray-100 hover:tw-text-gray-700 focus:tw-border-black focus:tw-text-black ">5</a>
+                </li>
+                <li>
+                  <a href="#" class="tw-py-2 tw-px-3 tw-leading-tight tw-text-gray-500 tw-bg-white tw-border tw-border-gray-500 hover:tw-bg-gray-100 hover:tw-text-gray-700 focus:tw-border-black focus:tw-text-black">...</a>
+                </li>
+                <li>
+                  <a href="#" class="tw-py-2 tw-px-3 tw-leading-tight tw-text-gray-500 tw-bg-white tw-border tw-border-gray-500 hover:tw-bg-gray-100 hover:tw-text-gray-700 focus:tw-border-black focus:tw-text-black ">ÚLTIMA</a>
+                </li>
+              </ul>
+            </nav>
         </section>
     </section>
   </main>

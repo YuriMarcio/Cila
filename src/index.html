@@ -31,7 +31,7 @@
       </div>
   <!-- NAVIGATION MOBILE -->
 
-      <section id="mobile-dropdown-menu" class="tw-absolute tw-w-96 tw-top-0 tw-left-0  md:tw-hidden" x-show="open" @click.outside="open = false" 
+      <section id="mobile-dropdown-menu" class="tw-absolute tw-w-96 tw-top-0 tw-left-0  md:tw-hidden" x-show="open" @click.outside="open = false" ''
       x-transition:enter="tw-duration-300"
       x-transition:leave-end="-tw-duration-300"
       > <!--colocar o hidden aqui -->
@@ -46,8 +46,8 @@
           <button id="close" class="tw-absolute tw-left-2/4 tw-ml-28 tw-top-0 tw-p-4 tw-bg-white tw-z-50" @click="open = ! open">
             <img src="./img/icon/close.svg" alt="" >
           </button>
-          <nav id="navgation" class=" tw-w-76 tw-bg-white lg:tw-init snap-y ">
-              <ul class="text-black tw-h-96 text-base lg:flex lg:text-white lg:justify-center lg:items-center  snap-y snap-mandatory overflow-y-auto ">
+          <nav id="navgation" class=" tw-w-76 tw-bg-white lg:tw-init tw-snap-y ">
+              <ul class="tw-text-black tw-h-96 tw-text-base lg:tw-flex lg:tw-text-white lg:tw-justify-center lg:tw-items-center  tw-snap-y tw-snap-mandatory tw-overflow-y-auto ">
                 <li>
                   <a href="#" class="tw-flex tw-justify-between tw-py-3 tw-px-4">
                     <p class="">NEW</p> 
