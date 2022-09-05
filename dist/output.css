@@ -627,6 +627,42 @@ body {
   top: 2.75rem;
 }
 
+.tw-left-2 {
+  left: 0.5rem;
+}
+
+.tw-left-36 {
+  left: 9rem;
+}
+
+.tw-left-44 {
+  left: 11rem;
+}
+
+.tw-left-16 {
+  left: 4rem;
+}
+
+.tw-right-16 {
+  right: 4rem;
+}
+
+.tw-right-28 {
+  right: 7rem;
+}
+
+.tw-right-24 {
+  right: 6rem;
+}
+
+.tw-right-11 {
+  right: 2.75rem;
+}
+
+.tw-right-10 {
+  right: 2.5rem;
+}
+
 .tw-z-50 {
   z-index: 50;
 }
@@ -880,6 +916,14 @@ body {
 
 .tw-w-3 {
   width: 0.75rem;
+}
+
+.tw-w-7\/12 {
+  width: 58.333333%;
+}
+
+.tw-w-9\/12 {
+  width: 75%;
 }
 
 .tw-min-w-20 {
