@@ -298,19 +298,20 @@
           <p id="paymentText" class="tw-hidden lg:tw-block"><strong>10% OFF</strong> NA PRIMEIRA COMPRA</p>
         </div>
     </section>
-    <section id="search" class="tw-flex tw-px-10 tw-border-r-4">
+    <section id="search" class="tw-flex tw-px-10 tw-border-r-4" x-data="{search1 : false,search2 : false,search3 : false,search4 : false}">
         <section id="categories" class="tw-p-4 tw-border-r-2">
             <div id="dropdown-cate" class="tw-min-w-197/1 tw-mb-11">
                 <button class="tw-w-full tw-h-12 tw-bg-zinc-200 tw-flex tw-justify-between tw-items-center tw-p-2"><p>ordenar por...</p> <img src="./img/icon/arrowdownW.svg" alt=""></button>
             </div>
             <nav class="tw-full">
                 <ul class="tw-w-full tw-flex tw-flex-col tw-justify-start tw-items-start">
-                    <li id="cate-filter" class="tw-w-full tw-border-b-2">
-                      <div class=" tw-flex tw-justify-between">
+                    <li id="cate-filter" class="tw-w-full tw-border-b-2" >
+                      <button class=" tw-w-full tw-flex tw-justify-between tw-items-center" @click="search1 = ! search1">
                           <h1 class="tw-font-bold">CATEGORIAS</h1>
-                          <img src="img/icon/less.svg" alt="">
-                      </div>
-                      <nav id="navgation-search" class="tw tw-bg-white lg:tw-init tw-my-4">
+                          <i x-show="!search1" class="fa-solid fa-plus text-black "></i>
+                          <i x-show="search1" class="fa-solid fa-minus text-black "></i>
+                      </button>
+                      <nav id="navgation-search" class="tw tw-bg-white lg:tw-init tw-my-4" x-show="search1">
                         <ul class="tw-text-black tw-text-base lg:tw-flex lg:tw-flex-col lg:text-white lg:justify-start lg:items-start">
                           <li>
                             <a href="#" class="tw-flex tw-justify-between tw-pb-">
@@ -376,11 +377,12 @@
                     </nav>   
                     </li>
                     <li id="size-filter" class="tw-w-full tw-border-b-2">
-                      <div class=" tw-flex tw-justify-between ">
+                      <button class="tw-w-full tw-flex tw-justify-between " @click="search2 = ! search2">
                         <h1 class="tw-font-bold">TAMANHO</h1>
-                        <img src="img/icon/less.svg" alt="">
-                      </div>
-                      <nav class="tw-my-3">
+                        <i x-show="!search2" class="fa-solid fa-plus text-black "></i>
+                        <i x-show="search2" class="fa-solid fa-minus text-black "></i>
+                      </button>
+                      <nav class="tw-my-3" x-show="search2">
                         <ul>
                           <li class="tw-flex tw-items-center tw-mb-2 tw-cursor-pointer">
                             <input id="1-checkbox" type="checkbox" value="" class="tw-w-3 tw-h-3  tw-bg-gray-100 tw-border-gray-500 focus:ring-blue-500 dark:bg-gray-700 tw-cursor-pointer">
@@ -406,11 +408,12 @@
                       </nav>
                     </li>
                     <li id="color-filter" class="tw-w-full tw-border-b-2">
-                      <div class=" tw-flex tw-justify-between ">
+                      <button class="tw-w-full tw-flex tw-justify-between " @click="search3 = ! search3">
                         <h1 class="tw-font-bold">COR</h1>
-                        <img src="img/icon/less.svg" alt="">
-                      </div>
-                        <div id="color" class="tw-my-5">
+                        <i x-show="!search3" class="fa-solid fa-plus text-black "></i>
+                        <i x-show="search3" class="fa-solid fa-minus text-black "></i>
+                      </button>
+                        <div id="color" class="tw-my-5"  x-show="search3">
                           <ul class="tw-grid tw-grid-cols-3 lg:tw-grid-cols-7 tw-gap-5">
                             <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black"><div class="tw-w-26 tw-h-26 tw-bg-black"></div></button></li>
                             <li><button class="tw-p-0.5 tw-border-2 tw-border-slate-600 tw-flex tw-justify-center focus:tw-border-black"><div class="tw-w-26 tw-h-26 tw-bg-pink-600"></div></button></li>
@@ -423,11 +426,12 @@
                         </div>
                     </li>
                     <li id="val-filter" class="tw-w-full">
-                      <div class=" tw-flex tw-justify-between ">
+                      <button class="tw-w-full tw-flex tw-justify-between" @click="search4 = ! search4">
                         <h1 class="tw-font-bold">FAIXA DE PREÇO</h1>
-                        <img src="img/icon/less.svg" alt="">
-                      </div>
-                      <nav class="tw-my-3">
+                        <i x-show="!search4" class="fa-solid fa-plus text-black "></i>
+                        <i x-show="search4" class="fa-solid fa-minus text-black "></i>
+                      </button>
+                      <nav class="tw-my-3" x-show="search4">
                         <ul>
                           <li class="tw-flex tw-items-center tw-mb-2 tw-cursor-pointer">
                             <input id="1-checkbox-val" type="checkbox" value="" class="tw-w-3 tw-h-3  tw-bg-gray-100 tw-border-gray-500 focus:ring-blue-500 dark:bg-gray-700 tw-cursor-pointer">

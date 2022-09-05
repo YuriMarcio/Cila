@@ -607,12 +607,20 @@ body {
   right: 50%;
 }
 
+.tw-left-44 {
+  left: 11rem;
+}
+
 .tw-top-5 {
   top: 1.25rem;
 }
 
-.tw-left-28 {
-  left: 7rem;
+.tw-right-10 {
+  right: 2.5rem;
+}
+
+.tw-left-20 {
+  left: 5rem;
 }
 
 .tw-right-1 {
@@ -627,42 +635,6 @@ body {
   top: 2.75rem;
 }
 
-.tw-left-2 {
-  left: 0.5rem;
-}
-
-.tw-left-36 {
-  left: 9rem;
-}
-
-.tw-left-44 {
-  left: 11rem;
-}
-
-.tw-left-16 {
-  left: 4rem;
-}
-
-.tw-right-16 {
-  right: 4rem;
-}
-
-.tw-right-28 {
-  right: 7rem;
-}
-
-.tw-right-24 {
-  right: 6rem;
-}
-
-.tw-right-11 {
-  right: 2.75rem;
-}
-
-.tw-right-10 {
-  right: 2.5rem;
-}
-
 .tw-z-50 {
   z-index: 50;
 }
@@ -673,11 +645,6 @@ body {
 
 .tw-m-5 {
   margin: 1.25rem;
-}
-
-.tw-mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
 }
 
 .tw-my-10 {
@@ -886,8 +853,8 @@ body {
   width: 10rem;
 }
 
-.tw-w-10\/12 {
-  width: 83.333333%;
+.tw-w-9\/12 {
+  width: 75%;
 }
 
 .tw-w-305 {
@@ -916,14 +883,6 @@ body {
 
 .tw-w-3 {
   width: 0.75rem;
-}
-
-.tw-w-7\/12 {
-  width: 58.333333%;
-}
-
-.tw-w-9\/12 {
-  width: 75%;
 }
 
 .tw-min-w-20 {
@@ -1781,24 +1740,12 @@ body {
 }
 
 @media (min-width: 1366px) {
-  .xl\:tw-w-full {
-    width: 100%;
-  }
-
-  .xl\:tw-max-w-none {
-    max-width: none;
-  }
-
   .xl\:tw-max-w-197\/1 {
     max-width: 12.313rem;
   }
 
   .xl\:tw-flex-row {
     flex-direction: row;
-  }
-
-  .xl\:tw-justify-center {
-    justify-content: center;
   }
 }
 
