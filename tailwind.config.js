@@ -36,6 +36,9 @@ module.exports = {
         '70': '4.375rem',
         '120': '7.5rem',
         '733': '45.813rem',
+        '305': '19.063rem',
+        '85': '5.313rem',
+        '20': '1.25rem',
       },
       maxWidth: {
         '197/1': '12.313rem',
@@ -58,6 +61,7 @@ module.exports = {
       minHeight: {
         '102': '6.375rem',
         '496': '31rem',
+        '20': '1.25rem',
       },
       height: {
         '126': '26.938rem',
@@ -68,6 +72,7 @@ module.exports = {
         '360': '22.5rem',
         '26' : '1.625rem',
         '70': '4.375rem',
+        '800': '50rem',
       },
       boxShadow: {
         '3xl': '0 -8px 35px -8px rgba(0, 0, 0, 0.8)',
@@ -107,7 +112,12 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
 
       '2xl': '1920px',
-      // => @media (min-width: 1536px) { ... }
+      '3xl': '1274px',
+      'm11': '1182px',
+      'm08': '1008px',
+      'm29': '1129px',
+      'm79': '979px',
+      'm34': '934px',
     }
   },
   plugins: [],

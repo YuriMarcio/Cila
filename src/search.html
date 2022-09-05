@@ -587,85 +587,166 @@
     </button>
   </div>
   </form>
-  <section id="submenuBottom" class="tw-bg-black tw-py-4 tw-px-4 lg:tw-flex"  x-data="{acord1 : false,acord2 : false,acord3 : false,acord4 : false}">
-    <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4  lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start ">
-      <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4" @click="acord1 = ! acord1">
-        <h3 class="text-white tw-text-base ">INSTITUCIONAL</h3>
-        <img src="./img/icon/moreW.svg" alt="" class="tw-w-14">
-      </button>
-      <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
-      <section id="" x-show="acord1">
-        <nav>
-          <ul>
-            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>CONTATO</strong></a></li>
-            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>PERGUNTAS FREQUENTES</strong></a></li>
-            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>DICAS DE USO</strong></a></li>
-            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>GUIA DE MEDIDAS</strong></a></li>
-            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>CILA EM CASA</strong></a></li>
-          </ul>
-        </nav>
-      </section>
-    </div>
-    <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start   ">
-      <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4" @click="acord2 = ! acord2">
-        <h3 class="tw-text-white tw-text-base ">POLÍTICAS</h3>
-        <img src="./img/icon/moreW.svg" alt="" class="tw-w-14">
-      </button>
-      <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
-      <section id="menuOpitions" x-show="acord2">
-        <nav>
-          <ul>
-            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>ENTREGA E DEVOLUÇÃO</strong></a></li>
-            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>ENTREGA E FRETE</strong></a></li>
-            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>TERMOS DE USO</strong></a></li>
-            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>PRIVACIDADE</strong></a></li>
-          </ul>
-        </nav>
-      </section>
-    </div> 
-    <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start  ">
-      <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4"  @click="acord3 = ! acord3">
-      <h3 class="text-white tw-text-base ">SOBRE NÓS</h3>
-      <img src="./img/icon/moreW.svg" alt="" class="tw-w-14">
-      </button>
-      <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
-      <section id="menuOpitions" x-show="acord3">
-        <nav>
-          <ul>
-            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>QUEM SOMOS</strong></a></li>
-            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>NOSSA HISTÓRIA</strong></a></li>
-            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>NOSSA FÁBRICA</strong></a></li>
-            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>PRÁTICAS REPONSÁVEIS</strong></a></li>
-            <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>NOSSA LOJA</strong></a></li>
-          </ul>
-        </nav>
-      </section>
-    </div> 
-    <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start   py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start  ">
-      <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4" @click="acord4 = ! acord4">
-      <h3 class="text-white tw-text-base ">CONTATO</h3>
-      <img src="./img/icon/moreW.svg" alt="" class="tw-w-14">
-      </button>
-      
-      <section id="menuOpitions" x-show="acord4">
-        <div id="textContact" class="text-white mb-3">
-        <p>(31)2555-7566 - 11h ás 19h</p>
-        <p>(31)99142-4956 - 10h ás 17h</p>
-        <p>cila@cila.com.br</p>
-        <p>troca@cila.com.br</p>
-        </div>
-        <div id="textContact" class="text-white mb-3">
-        <p>Horário de funcionamento da loja física:</p>
-        <p>Segunda á Sexta - 10h ás 19h</p>
-        <p>Sábado - 9h ás 14h</p>
-        </div>
-        <div id="social" class="tw-flex tw-gap-4">
-        <i><a href="#"><img src="./img/icon/insta.svg" alt=""></a></i>
-        <i><a href="#"><img src="./img/icon/fac.svg" alt=""></a></i>
-        </div>
-      </section>
-    </div>
-  </section>
+  <div id="footer-menu-mobile" class="lg:tw-hidden">
+    <section id="submenuBottom" class="tw-bg-black tw-py-4 tw-px-4 lg:tw-flex"  x-data="{acord1 : false,acord2 : false,acord3 : false,acord4 : false}">
+      <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4  lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start ">
+        <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4" @click="acord1 = ! acord1">
+          <h3 class="text-white tw-text-base ">INSTITUCIONAL</h3>
+          <i x-show="!acord1" class="fa-solid fa-plus text-white lg:invisible"></i>
+          <i x-show="acord1" class="fa-solid fa-minus text-white lg:invisible"></i>
+        </button>
+        <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
+        <section id="" x-show="acord1">
+          <nav>
+            <ul>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>CONTATO</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>PERGUNTAS FREQUENTES</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>DICAS DE USO</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>GUIA DE MEDIDAS</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>CILA EM CASA</strong></a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+      <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start   ">
+        <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4" @click="acord2 = ! acord2">
+          <h3 class="tw-text-white tw-text-base ">POLÍTICAS</h3>
+          <i x-show="!acord2" class="fa-solid fa-plus text-white lg:invisible"></i>
+          <i x-show="acord2" class="fa-solid fa-minus text-white lg:invisible"></i>
+        </button>
+        <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
+        <section id="menuOpitions" x-show="acord2">
+          <nav>
+            <ul>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>ENTREGA E DEVOLUÇÃO</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>ENTREGA E FRETE</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>TERMOS DE USO</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>PRIVACIDADE</strong></a></li>
+            </ul>
+          </nav>
+        </section>
+      </div> 
+      <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start"@click="acord3 = ! acord3">
+        <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4">
+        <h3 class="text-white tw-text-base ">SOBRE NÓS</h3>
+        <i x-show="!acord3" class="fa-solid fa-plus text-white lg:invisible"></i>
+        <i x-show="acord3" class="fa-solid fa-minus text-white lg:invisible"></i>
+        </button>
+        <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
+        <section id="menuOpitions" x-show="acord3">
+          <nav>
+            <ul>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>QUEM SOMOS</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>NOSSA HISTÓRIA</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>NOSSA FÁBRICA</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>PRÁTICAS REPONSÁVEIS</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>NOSSA LOJA</strong></a></li>
+            </ul>
+          </nav>
+        </section>
+      </div> 
+      <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start  py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start " @click="acord4 = ! acord4">
+        <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4">
+        <h3 class="text-white tw-text-base ">CONTATO</h3>
+        <i x-show="!acord4" class="fa-solid fa-plus text-white lg:invisible"></i>
+        <i x-show="acord4" class="fa-solid fa-minus text-white lg:invisible"></i>
+        </button>
+        <section id="menuOpitions" x-show="acord4">
+          <div id="textContact" class="text-white mb-3">
+          <p>(31)2555-7566 - 11h ás 19h</p>
+          <p>(31)99142-4956 - 10h ás 17h</p>
+          <p>cila@cila.com.br</p>
+          <p>troca@cila.com.br</p>
+          </div>
+          <div id="textContact" class="text-white mb-3">
+          <p>Horário de funcionamento da loja física:</p>
+          <p>Segunda á Sexta - 10h ás 19h</p>
+          <p>Sábado - 9h ás 14h</p>
+          </div>
+          <div id="social" class="tw-flex tw-gap-4">
+          <i><a href="#"><img src="./img/icon/insta.svg" alt=""></a></i>
+          <i><a href="#"><img src="./img/icon/fac.svg" alt=""></a></i>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
+  <div id="footer-menu-desk" class="tw-hidden lg:block" >
+    <section id="submenuBottom" class="tw-bg-black tw-py-4 tw-px-4 lg:tw-flex">
+      <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4  lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start ">
+        <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4 tw-border-b-2 tw-border-gray-700">
+          <h3 class="text-white tw-text-base ">INSTITUCIONAL</h3>
+        </button>
+        <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
+        <section id="">
+          <nav>
+            <ul>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>CONTATO</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>PERGUNTAS FREQUENTES</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>DICAS DE USO</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>GUIA DE MEDIDAS</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>CILA EM CASA</strong></a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+      <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start   ">
+        <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4 tw-border-b-2 tw-border-gray-700">
+          <h3 class="tw-text-white tw-text-base ">POLÍTICAS</h3>
+        </button>
+        <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
+        <section>
+          <nav>
+            <ul>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>ENTREGA E DEVOLUÇÃO</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>ENTREGA E FRETE</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>TERMOS DE USO</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>PRIVACIDADE</strong></a></li>
+            </ul>
+          </nav>
+        </section>
+      </div> 
+      <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start  ">
+        <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4 tw-border-b-2 tw-border-gray-700">
+        <h3 class="text-white tw-text-base ">SOBRE NÓS</h3>
+        </button>
+        <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
+        <section id="menuOpitions">
+          <nav>
+            <ul>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>QUEM SOMOS</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>NOSSA HISTÓRIA</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>NOSSA FÁBRICA</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>PRÁTICAS REPONSÁVEIS</strong></a></li>
+              <li class="tw-my-3"><a href="#" class="tw-text-white"><strong>NOSSA LOJA</strong></a></li>
+            </ul>
+          </nav>
+        </section>
+      </div> 
+      <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start  py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start  ">
+        <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4 tw-border-b-2 tw-border-gray-700">
+        <h3 class="text-white tw-text-base ">CONTATO</h3>
+        </button>
+        <section id="menuOpitions" x-show="acord4">
+          <div id="textContact" class="text-white mb-3">
+          <p>(31)2555-7566 - 11h ás 19h</p>
+          <p>(31)99142-4956 - 10h ás 17h</p>
+          <p>cila@cila.com.br</p>
+          <p>troca@cila.com.br</p>
+          </div>
+          <div id="textContact" class="text-white mb-3">
+          <p>Horário de funcionamento da loja física:</p>
+          <p>Segunda á Sexta - 10h ás 19h</p>
+          <p>Sábado - 9h ás 14h</p>
+          </div>
+          <div id="social" class="tw-flex tw-gap-4">
+          <i><a href="#"><img src="./img/icon/insta.svg" alt=""></a></i>
+          <i><a href="#"><img src="./img/icon/fac.svg" alt=""></a></i>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
   <section id="acepts" class=" tw-px-4 tw-py-4 tw-mb-4 lg:tw-flex lg:tw-items-center lg:tw-gap-5 lg:tw-justify-between">
     <div id="divider" class="lg:tw-flex lg:tw-items-center lg:tw-gap-4">
       <div id="cards" class="tw-mb-4">
@@ -690,5 +771,6 @@
     </div>
   </section>
 </footer>
+<script src="https://kit.fontawesome.com/d951250582.js" crossorigin="anonymous"></script>
 </body>
 </html>

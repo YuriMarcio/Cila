@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+  
+    <body>
+        <div
+        x-data="{ open: false, timeout: null}"
+        x-on:mouseenter="
+        width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        if (width > 640) {
+          open = true; clearTimeout(timeout)
+        }
+        "
+        x-on:mouseleave="
+        width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        if (width > 640) {
+         timeout = setTimeout(() => { open = false }, 100)
+        }
+        "
+        @resize.window="
+        width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        if (width > 640) {
+         open = false
+        }
+        "
+        class="flex flex-col items-start justify-start sm:items-center w-full sm:relative sm:w-3/12 font-bold"
+      >
+        <div
+          @click="open = !open"
+          x-bind:class="open ? 'border-black border-b sm:border-0' : ''"
+          class=" p-2 sm:p-0 w-full text-left sm:text-center hover:text-primary-light"
+        >
+          ABOUT US
+        </div>
+        
+  </body>
+</html>
