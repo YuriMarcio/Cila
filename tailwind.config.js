@@ -66,6 +66,8 @@ module.exports = {
       height: {
         '126': '26.938rem',
         '105': '6.617rem',
+        '132': '8.25rem',
+        '100': '6.25rem',
         '800': '52.688rem',
         '30' : '1.883rem',
         '366': '22.875rem',
@@ -120,5 +122,10 @@ module.exports = {
       'm34': '934px',
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
+  variants: {
+    scrollbar: ['rounded'],
+}
 }

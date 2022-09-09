@@ -70,6 +70,13 @@ var swiper = new Swiper(".mySwiper", {
     keyboard: true,
   });
 
+  var swiper = new Swiper(".bagSwiper", {
+    direction: "vertical",
+    slidesPerView: 3,
+    spaceBetween: 3,
+    mousewheel: true,
+  });
+
   function app(){
     type:"less"
   }

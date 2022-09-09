@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.6 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -355,6 +355,13 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   /* 2 */
 }
 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
@@ -408,6 +415,11 @@ img,
 video {
   max-width: 100%;
   height: auto;
+}
+
+* {
+  scrollbar-color: initial;
+  scrollbar-width: initial;
 }
 
 body {
@@ -741,6 +753,14 @@ body {
   margin-bottom: 4rem;
 }
 
+.tw-mr-10 {
+  margin-right: 2.5rem;
+}
+
+.tw-mr-6 {
+  margin-right: 1.5rem;
+}
+
 .tw-block {
   display: block;
 }
@@ -793,12 +813,12 @@ body {
   height: 0.5rem;
 }
 
-.tw-h-126 {
-  height: 26.938rem;
-}
-
 .tw-h-20 {
   height: 5rem;
+}
+
+.tw-h-126 {
+  height: 26.938rem;
 }
 
 .tw-h-1 {
@@ -815,6 +835,10 @@ body {
 
 .tw-h-auto {
   height: auto;
+}
+
+.tw-h-32 {
+  height: 8rem;
 }
 
 .tw-min-h-20 {
@@ -943,7 +967,8 @@ body {
 }
 
 .tw-snap-y {
-  scroll-snap-type: y var(--tw-scroll-snap-strictness);
+  -ms-scroll-snap-type: y var(--tw-scroll-snap-strictness);
+      scroll-snap-type: y var(--tw-scroll-snap-strictness);
 }
 
 .tw-snap-mandatory {
@@ -1414,38 +1439,6 @@ body {
   transition-duration: 300ms;
 }
 
-.hover\:tw-border-b:hover {
-  border-bottom-width: 1px;
-}
-
-.hover\:tw-border-b-2:hover {
-  border-bottom-width: 2px;
-}
-
-.hover\:tw-border-b-white:hover {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.hover\:tw-bg-gray-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
-.hover\:tw-font-bold:hover {
-  font-weight: 700;
-}
-
-.hover\:tw-text-gray-900:hover {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-
-.hover\:tw-text-gray-700:hover {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
 .focus\:tw-border:focus {
   border-width: 1px;
 }
@@ -1483,6 +1476,38 @@ body {
 .focus\:tw-outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.hover\:tw-border-b:hover {
+  border-bottom-width: 1px;
+}
+
+.hover\:tw-border-b-2:hover {
+  border-bottom-width: 2px;
+}
+
+.hover\:tw-border-b-white:hover {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.hover\:tw-bg-gray-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.hover\:tw-font-bold:hover {
+  font-weight: 700;
+}
+
+.hover\:tw-text-gray-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.hover\:tw-text-gray-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 @media (min-width: 360px) {

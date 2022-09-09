@@ -41,7 +41,7 @@
       <div class="swiper-pagination"></div>
     </div>
   </section>
-  <nav id="menu" class="tw-w-full tw-h-16 tw-absolute tw-top-0 tw-bg-slate-900/80 tw-px-4 tw-flex tw-items-center md:tw-h-20 tw-z-50" x-data="{open: false,bag: false,dropdow:false,dropmenu:false,search}">
+  <nav id="menu" class="tw-w-full tw-h-16 tw-absolute tw-top-0 tw-bg-slate-900/80 tw-px-4 tw-flex tw-items-center md:tw-h-20 tw-z-50" x-data="{open: false,bag: false,dropdow:false,dropmenu:false,search:false}">
       <button id="menu-icon-mobile" @click="open = ! open">
         <img src="./img/icon/menu.svg" class="tw-h-6 lg:tw-hidden" alt="">
       </button>
@@ -277,69 +277,108 @@
 </div>
 <!--MENUM TRIPLO-->
  <!-- DROPDOW CARRINHO DE COMPRAS MOBILE -->
-  <section id="dropdown-bag"  class="tw-absolute tw-w-96 tw-top-0 tw-right-0 tw-flex tw-flex-col tw-items-end " x-show="bag">
-    <button id="close" class="tw-absolute tw-right-2/4 tw-mr-28 tw-top-0 tw-p-4 tw-bg-white tw-z-50"  @click="bag = ! bag"  @click.outside="bag = false">
+  <section id="dropdown-bag"  class="tw-absolute tw-w-96 tw-top-0 tw-right-0 tw-flex tw-flex-col tw-items-end " x-show="bag" @click.outside="bag = false">
+    <button id="close" class="tw-absolute tw-right-2/4 tw-mr-28 tw-top-0 tw-p-4 tw-bg-white tw-z-50"  @click="bag = ! bag" >
       <img src="./img/icon/close.svg" alt="" >
     </button>
-    <div id="sacola-produtos" class=" tw-h-126 tw-w-76 pl-4 tw-bg-white tw-z-50 tw-pt-8 tw-overflow-auto ">
+    <div id="sacola-produtos" class=" tw-h-auto  tw-w-76 pl-4 tw-bg-white tw-z-50 tw-pt-8">
       <h1 class="mb-6 tw-text-base">MINHA SACOLA (2) </h1>
-        <div id="product" class="tw-flex tw-justify-between tw-mb-5">
-          <div id="product-image" class="tw-w-70">
-            <img src="./img/produtos/clothing1.png" alt="" class="">
-          </div>
-          <div id="info-product" class="tw-w-40 tw-py-2">
-            <h1 class="tw-font-normal tw-leading-4 break-normal tw-mb-1 tw-text-sm">CALCINHA HOT PANT CAVADA FLUITY</h1>
-            <p class="tw-mb-1"><strong>R$198,00</strong></p>
-            <div id="product-amount" class="flex">
-              <button id="les" class="tw-p-2 tw-border tw-border-black"><img src="./img/icon/less.svg" alt=""></button>
-              <div id="mount" class="tw-px-2 tw-py-1 tw-bg-zinc-200"><span>01</span></div>
-              <button id="more" class="tw-p-2 tw-border tw-border-black"><img src="./img/icon/more.svg" alt=""></button>
+      <div class="swiper bagSwiper tw-h-96 tw-h-full">
+        <div class="swiper-wrapper">
+          <div id="product" class="swiper-slide tw-flex tw-justify-between tw-mb-5">
+            <div id="product-image" class="tw-w-70">
+              <img src="./img/produtos/clothing1.png" alt="" class="">
             </div>
+            <div id="info-product" class="tw-w-40 tw-py-2">
+              <h1 class="tw-font-normal tw-leading-4 break-normal tw-mb-1 tw-text-sm">CALCINHA HOT PANT CAVADA FLUITY</h1>
+              <p class="tw-mb-1"><strong>R$198,00</strong></p>
+              <div id="product-amount" class="flex">
+                <button id="les" class="tw-p-2 tw-border tw-border-black">
+                  <img src="./img/icon/less.svg" alt="">
+                </button>
+                <div id="mount" class="tw-px-2 tw-py-1 tw-bg-zinc-200"><span>01</span></div>
+                <button id="more" class="tw-p-2 tw-border tw-border-black">
+                  <img src="./img/icon/moreB.svg" alt="">
+                </button>
+              </div>
+            </div>
+            <button id="remove-product" class='tw-flex tw-justify-center tw-items-center tw-mr-6'>
+              <img src="./img/icon/trash.svg" alt="" class="tw-h-6">
+            </button>
           </div>
-          <button id="remove-product" class='tw-flex tw-justify-center tw-items-center'>
-            <img src="./img/icon/trash.svg" alt="" class="tw-h-6">
-          </button>
-        </div>
 
-        <div id="product" class="tw-flex tw-justify-between tw-mb-5">
-          <div id="product-image" class="tw-w-70">
-            <img src="./img/produtos/clothing1.png" alt="" class="">
-          </div>
-          <div id="info-product" class="tw-w-40 tw-py-2">
-            <h1 class="tw-font-normal tw-leading-4 break-normal tw-mb-1 tw-text-sm">CALCINHA HOT PANT CAVADA FLUITY</h1>
-            <p class="tw-mb-1"><strong>R$198,00</strong></p>
-            <div id="product-amount" class="flex">
-              <button id="les" class="tw-p-2 tw-border tw-border-black"><img src="./img/icon/less.svg" alt=""></button>
-              <div id="mount" class="tw-px-2 tw-py-1 tw-bg-zinc-200"><span>01</span></div>
-              <button id="more" class="tw-p-2 tw-border tw-border-black"><img src="./img/icon/more.svg" alt=""></button>
+          <div id="product" class="swiper-slide tw-flex tw-justify-between tw-mb-5">
+            <div id="product-image" class="tw-w-70">
+              <img src="./img/produtos/clothing1.png" alt="" class="">
             </div>
+            <div id="info-product" class="tw-w-40 tw-py-2">
+              <h1 class="tw-font-normal tw-leading-4 break-normal tw-mb-1 tw-text-sm">CALCINHA HOT PANT CAVADA FLUITY</h1>
+              <p class="tw-mb-1"><strong>R$198,00</strong></p>
+              <div id="product-amount" class="flex">
+                <button id="les" class="tw-p-2 tw-border tw-border-black">
+                  <img src="./img/icon/less.svg" alt="">
+                </button>
+                <div id="mount" class="tw-px-2 tw-py-1 tw-bg-zinc-200"><span>01</span></div>
+                <button id="more" class="tw-p-2 tw-border tw-border-black">
+                  <img src="./img/icon/moreB.svg" alt="">
+                </button>
+              </div>
+            </div>
+            <button id="remove-product" class='tw-flex tw-justify-center tw-items-center tw-mr-6'>
+              <img src="./img/icon/trash.svg" alt="" class="tw-h-6">
+            </button>
           </div>
-          <button id="remove-product" class='tw-flex tw-justify-center tw-items-center'>
-            <img src="./img/icon/trash.svg" alt="" class="tw-h-6">
-          </button>
-        </div>
 
-        <div id="product" class="tw-flex tw-justify-between tw-mb-5">
-          <div id="product-image" class="tw-w-70">
-            <img src="./img/produtos/clothing2.png" alt="" class="">
-          </div>
-          <div id="info-product" class="tw-w-40 tw-py-2">
-            <h1 class="tw-font-normal tw-leading-4 break-normal tw-mb-1 tw-text-sm">CALCINHA HOT PANT CAVADA FLUITY</h1>
-            <p class="tw-mb-1"><strong>R$198,00</strong></p>
-            <div id="product-amount" class="flex">
-              <button id="les" class="tw-p-2 tw-border tw-border-black"><img src="./img/icon/less.svg" alt=""></button>
-              <div id="mount" class="tw-px-2 tw-py-1 tw-bg-zinc-200"><span>01</span></div>
-              <button id="more" class="tw-p-2 tw-border tw-border-black"><img src="./img/icon/more.svg" alt=""></button>
+          <div id="product" class="swiper-slide tw-flex tw-justify-between tw-mb-5">
+            <div id="product-image" class="tw-w-70">
+              <img src="./img/produtos/clothing1.png" alt="" class="">
             </div>
+            <div id="info-product" class="tw-w-40 tw-py-2">
+              <h1 class="tw-font-normal tw-leading-4 break-normal tw-mb-1 tw-text-sm">CALCINHA HOT PANT CAVADA FLUITY</h1>
+              <p class="tw-mb-1"><strong>R$198,00</strong></p>
+              <div id="product-amount" class="flex">
+                <button id="les" class="tw-p-2 tw-border tw-border-black">
+                  <img src="./img/icon/less.svg" alt="">
+                </button>
+                <div id="mount" class="tw-px-2 tw-py-1 tw-bg-zinc-200"><span>01</span></div>
+                <button id="more" class="tw-p-2 tw-border tw-border-black">
+                  <img src="./img/icon/moreB.svg" alt="">
+                </button>
+              </div>
+            </div>
+            <button id="remove-product" class='tw-flex tw-justify-center tw-items-center tw-mr-6'>
+              <img src="./img/icon/trash.svg" alt="" class="tw-h-6">
+            </button>
           </div>
-          <button id="remove-product" class='tw-flex tw-justify-center tw-items-center'>
-            <img src="./img/icon/trash.svg" alt="" class="tw-h-6">
-          </button>
+
+          <div id="product" class="swiper-slide tw-flex tw-justify-between tw-mb-5">
+            <div id="product-image" class="tw-w-70">
+              <img src="./img/produtos/clothing1.png" alt="" class="">
+            </div>
+            <div id="info-product" class="tw-w-40 tw-py-2">
+              <h1 class="tw-font-normal tw-leading-4 break-normal tw-mb-1 tw-text-sm">CALCINHA HOT PANT CAVADA FLUITY</h1>
+              <p class="tw-mb-1"><strong>R$198,00</strong></p>
+              <div id="product-amount" class="flex">
+                <button id="les" class="tw-p-2 tw-border tw-border-black">
+                  <img src="./img/icon/less.svg" alt="">
+                </button>
+                <div id="mount" class="tw-px-2 tw-py-1 tw-bg-zinc-200"><span>01</span></div>
+                <button id="more" class="tw-p-2 tw-border tw-border-black">
+                  <img src="./img/icon/moreB.svg" alt="">
+                </button>
+              </div>
+            </div>
+            <button id="remove-product" class='tw-flex tw-justify-center tw-items-center tw-mr-6'>
+              <img src="./img/icon/trash.svg" alt="" class="tw-h-6">
+            </button>
+          </div>
         </div>
+      <div class="swiper-scrollbar"></div>
       </div>
+    </div>
       <div id="line" class=""></div>
-      <div id="next-cart" class="tw-p-4 tw-bg-white tw-w-76">
-        <div id="price" class="tw-flex tw-items-center tw-justify-between mb-8">
+      <div id="next-cart" class="tw-p-4 tw-bg-white tw-w-76 tw-z-50 ">
+        <div id="price" class="tw-flex tw-items-center tw-justify-between mb-8 tw-bg-white">
           <p>SUBTOTAL</p>
           <span><strong>R$198,00</strong></span>
         </div>
