@@ -1,7 +1,7 @@
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
-    spaceBetween: 10,
-    slidesPerGroup: 3,
+    spaceBetween: 2,
+    slidesPerGroup: 1,
     loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -12,22 +12,22 @@ var swiper = new Swiper(".mySwiper", {
       300: {
         slidesPerView: 2,
         spaceBetween: 180,
-        slidesPerGroup: 3,
+        slidesPerGroup: 1,
       },
       351: {
         slidesPerView: 2,
         spaceBetween: 150,
-        slidesPerGroup: 3,
+        slidesPerGroup: 1,
       },
       474: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 40,
-        slidesPerGroup: 3,
+        slidesPerGroup: 1,
       },
       520: {
         slidesPerView: 3,
         spaceBetween: 220,
-        slidesPerGroup: 3,
+        slidesPerGroup: 1,
       },
       610: {
         slidesPerView: 3,
@@ -66,8 +66,19 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
     mousewheel: false,
     keyboard: true,
+  });
+
+  var swiper = new Swiper(".bagSwiper", {
+    direction: "vertical",
+    slidesPerView: 3,
+    spaceBetween: 3,
+    mousewheel: true,
   });
 
   function app(){
