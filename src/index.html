@@ -10,11 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <!-- FONT -->
     
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
 <header >
-<section id="navgation" >
   <section id="banner" class="tw-w-full tw-h-screen tw-bg-cover tw-bg-center">
     <div class="swiper BannerSwiper tw-h-full">
       <div class="swiper-wrapper tw-h-full tw-h-full">
@@ -38,16 +37,18 @@
           <img src="./img/icon/arrowWhite.svg" alt="">
         </button>
       </div>
-      <div class="swiper-pagination tw-bg-slate-600"></div>
+      <div class="swiper-pagination "></div>
     </div>
   </section>
+<section id="navgation" >
+  
   <nav id="menu" class="tw-w-full tw-h-16 tw-absolute tw-top-0 tw-bg-slate-900/80 tw-px-4 tw-flex tw-items-center md:tw-h-20 tw-z-50" x-data="{open: false,bag: false,dropdow:false,dropmenu:false,search:false}">
       <button id="menu-icon-mobile" @click="open = ! open">
         <img src="./img/icon/menu.svg" class="tw-h-6 lg:tw-hidden" alt="">
       </button>
       <div id="logo" class="tw-ml-4">
-        <img src="./img/logo/logo_cila.svg" alt="" class="lg:tw-hidden tw-h-30">
-        <img src="./img/logo/logoComplet.svg" alt="" class=" tw-hidden lg:tw-block md:tw-min-w-85 ">
+        <a href="/src/index.html"><img src="./img/logo/logo_cila.svg" alt="" class="lg:tw-hidden tw-h-30"></a>
+       <a href="/src/index.html"> <img src="./img/logo/logoComplet.svg" alt="" class=" tw-hidden lg:tw-block md:tw-min-w-85 "></a>
       </div>
 <!-- NAVIGATION MOBILE -->
       <section id="mobile-dropdown-menu" class="tw-absolute tw-w-96 tw-top-0 tw-left-0  lg:tw-hidden" x-show="open" @click.outside="open = false"
@@ -68,61 +69,61 @@
           <nav id="navgation" class=" tw-w-76 tw-bg-white lg:tw-init tw-snap-y ">
               <ul class="tw-text-black tw-h-96 tw-text-base lg:tw-flex lg:tw-text-white lg:tw-justify-center lg:tw-items-center  tw-snap-y tw-snap-mandatory tw-overflow-y-auto ">
                 <li>
-                  <a href="#" class="tw-flex tw-justify-between tw-py-3 tw-px-4">
+                  <a href="/src/search.html" class="tw-flex tw-justify-between tw-py-3 tw-px-4">
                     <p class="">NEW</p> 
                     <img src="./img/icon/arrow.svg" alt="">
                   </a> 
                 </li> 
                 <li >
-                  <a href="#" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
+                  <a href="/src/search.html" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
                     <p>BIQUINÍS</p> 
                     <img src="./img/icon/arrow.svg" alt="">
                   </a>  
                 </li> 
                 <li >
-                  <a href="#" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
+                  <a href="/src/search.html" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
                     <p>MAIÓS</p> 
                     <img src="./img/icon/arrow.svg" alt="">
                   </a>  
                 </li> 
                 <li >
-                  <a href="#" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
+                  <a href="/src/search.html" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
                     <p>RESORT</p> 
                     <img src="./img/icon/arrow.svg" alt="">
                   </a>  
                 </li> 
                 <li >
-                  <a href="#" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
+                  <a href="/src/search.html" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
                     <p>ECO</p> 
                     <img src="./img/icon/arrow.svg" alt="">
                   </a>  
                 </li> 
                 <li >
-                  <a href="#" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
+                  <a href="/src/search.html" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
                     <p>CLÁSSICOS</p> 
                     <img src="./img/icon/arrow.svg" alt="">
                   </a>  
                 </li> 
                 <li >
-                  <a href="#" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
+                  <a href="/src/search.html" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
                     <p>OFF</p> 
                     <img src="./img/icon/arrow.svg" alt="">
                   </a>  
                 </li> 
                 <li >
-                  <a href="#" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
+                  <a href="/src/search.html" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
                     <p>ACESSÓRIOS</p> 
                     <img src="./img/icon/arrow.svg" alt="">
                   </a>  
                 </li> 
                 <li >
-                  <a href="#" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
+                  <a href="/src/search.html" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
                     <p>MASCULINO</p> 
                     <img src="./img/icon/arrow.svg" alt="">
                   </a>  
                 </li> 
                 <li >
-                  <a href="#" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
+                  <a href="/src/search.html" class="tw-flex tw-justify-between tw-py-3 tw-px-4 hover:tw-border-b">
                     <p>COLEÇÕES</p> 
                     <img src="./img/icon/arrow.svg" alt="">
                   </a>  
@@ -155,53 +156,53 @@
   <nav id="navgation-desktop" class="tw-hidden lg:tw-block tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center tw-ml-4 tw-overflow-hidden tw-relative tw-red-800 " x-show="!search">
     <ul class="tw-max-w-4xl 3xl:tw-w-full 3xl:tw-max-w-none 3xl:tw-justify-center tw-text-white tw-flex tw-items-center tw-justify-start tw-text-sm">
       <li class="">
-        <a href="#" class="tw-py-3 tw-px-4">
+        <a href="/src/search.html" class="tw-py-3 tw-px-4">
           <p class="tw-py-3 tw-px-4 tw-text-sm y hover:tw-font-bold hover:tw-border-b-2 hover:tw-border-b-white ">NEW</p> 
         </a> 
       </li> 
        
       <li >
-        <a href="#" class="tw-py-3 tw-px-4">
+        <a href="/src/search.html" class="tw-py-3 tw-px-4">
           <p class="tw-py-3 tw-px-4 tw-text-sm hover:tw-font-bold hover:tw-border-b-2 hover:tw-border-b-white ">BIQUINÍS</p> 
         </a>  
       </li> 
       <li >
-        <a href="#" class="tw-py-3 tw-px-4">
+        <a href="/src/search.html" class="tw-py-3 tw-px-4">
           <p class="tw-py-3 tw-px-4 tw-text-sm hover:tw-font-bold hover:tw-border-b-2 hover:tw-border-b-white ">MAIÓS</p> 
         </a>  
       </li> 
       <li >
-        <a href="#" class="tw-py-3 tw-px-4">
+        <a href="/src/search.html" class="tw-py-3 tw-px-4">
           <p class="tw-py-3 tw-px-4 tw-text-sm hover:tw-font-bold hover:tw-border-b-2 hover:tw-border-b-white ">RESORT</p> 
         </a>  
       </li> 
       <li >
-        <a href="#" class="tw-py-3 tw-px-4">
+        <a href="/src/search.html" class="tw-py-3 tw-px-4">
           <p class="tw-py-3 tw-px-4 y hover:tw-font-bold hover:tw-border-b-2 hover:tw-border-b-white ">ECO</p> 
         </a>  
       </li> 
       <li >
-        <a href="#" class="tw-py-3 tw-px-4">
+        <a href="/src/search.html" class="tw-py-3 tw-px-4">
           <p class="tw-hidden m34:tw-block tw-py-3 tw-px-4 y hover:tw-font-bold hover:tw-border-b-2 hover:tw-border-b-white ">CLÁSSICOS</p> 
         </a>  
       </li> 
       <li >
-        <a href="#" class="tw-py-3 tw-px-4">
+        <a href="/src/search.html" class="tw-py-3 tw-px-4">
           <p class="tw-hidden m08:tw-block tw-py-3 tw-px-4 y hover:tw-font-bold hover:tw-border-b-2 hover:tw-border-b-white ">OFF</p> 
         </a>  
       </li> 
       <li >
-        <a href="#">
+        <a href="/src/search.html" class="tw-py-3 tw-px-4">
           <p class="tw-hidden m29:tw-block tw-py-3 tw-px-6 hover:tw-font-bold hover:tw-border-b-2 hover:tw-border-b-white ">MASCULINO</p> 
         </a>  
       </li> 
       <li >
-        <a href="#" class="tw-py-3 tw-px-4">
+        <a href="/src/search.html" class="tw-py-3 tw-px-4">
           <p class="tw-hidden m11:tw-block tw-py-3 tw-px-4  hover:tw-font-bold hover:tw-border-b-2 hover:tw-border-b-white ">COLEÇÕES</p> 
         </a>  
       </li> 
       <li >
-        <a href="#" class="tw-py-3 tw-px-4">
+        <a href="/src/search.html" class="tw-py-3 tw-px-4">
           <p class="tw-hidden m11:tw-block tw-py-3 tw-px-4  hover:tw-font-bold hover:tw-border-b-2 hover:tw-border-b-white ">JUMP</p> 
         </a>  
       </li> 
@@ -266,120 +267,118 @@
   </ul>
 </div>
 <!--MENUM TRIPLO-->
- <!-- DROPDOW CARRINHO DE COMPRAS MOBILE -->
-  <section id="dropdown-bag"  class="tw-absolute tw-w-96 tw-top-0 tw-right-0 tw-flex tw-flex-col tw-items-end " x-show="bag" @click.outside="bag = false">
-    <button id="close" class="tw-absolute tw-right-2/4 tw-mr-28 tw-top-0 tw-p-4 tw-bg-white tw-z-50"  @click="bag = ! bag" >
-      <img src="./img/icon/close.svg" alt="" >
-    </button>
-    <div id="sacola-produtos" class=" tw-h-auto  tw-w-76 pl-4 tw-bg-white tw-z-50 tw-pt-8">
-      <h1 class="mb-6 tw-text-base">MINHA SACOLA (2) </h1>
-      <div class="swiper bagSwiper tw-h-96 tw-h-full">
-        <div class="swiper-wrapper">
-          <div id="product" class="swiper-slide tw-flex tw-justify-between tw-mb-5">
-            <div id="product-image" class="tw-w-70">
-              <img src="./img/produtos/clothing1.png" alt="" class="">
-            </div>
-            <div id="info-product" class="tw-w-40 tw-py-2">
-              <h1 class="tw-font-normal tw-leading-4 break-normal tw-mb-1 tw-text-sm">CALCINHA HOT PANT CAVADA FLUITY</h1>
-              <p class="tw-mb-1"><strong>R$198,00</strong></p>
-              <div id="product-amount" class="flex">
-                <button id="les" class="tw-p-2 tw-border tw-border-black">
-                  <img src="./img/icon/less.svg" alt="">
-                </button>
-                <div id="mount" class="tw-px-2 tw-py-1 tw-bg-zinc-200"><span>01</span></div>
-                <button id="more" class="tw-p-2 tw-border tw-border-black">
-                  <img src="./img/icon/moreB.svg" alt="">
-                </button>
-              </div>
-            </div>
-            <button id="remove-product" class='tw-flex tw-justify-center tw-items-center tw-mr-6'>
-              <img src="./img/icon/trash.svg" alt="" class="tw-h-6">
-            </button>
+<section id="dropdown-bag"  class="tw-absolute tw-w-96 tw-top-0 tw-right-0 tw-flex tw-flex-col tw-items-end " x-show="bag" @click.outside="bag = false">
+  <button id="close" class="tw-absolute tw-right-2/4 tw-mr-28 tw-top-0 tw-p-4 tw-bg-white tw-z-50"  @click="bag = ! bag" >
+    <img src="./img/icon/close.svg" alt="" >
+  </button>
+  <div id="sacola-produtos" class=" tw-h-auto tw-px-2 tw-w-76 pl-4 tw-bg-white tw-z-50 tw-pt-8">
+    <h1 class="mb-6 tw-text-base">MINHA SACOLA (2) </h1>
+    <div class="swiper bagSwiper tw-h-96 tw-h-full">
+      <div class="swiper-wrapper">
+        <div id="product" class="swiper-slide tw-flex tw-justify-between tw-mb-5">
+          <div id="product-image" class="tw-w-70">
+            <img src="./img/produtos/clothing1.png" alt="" class="">
           </div>
-
-          <div id="product" class="swiper-slide tw-flex tw-justify-between tw-mb-5">
-            <div id="product-image" class="tw-w-70">
-              <img src="./img/produtos/clothing1.png" alt="" class="">
+          <div id="info-product" class=" tw-w-40 tw-py-2">
+            <h1 class="tw-font-normal tw-leading-4 break-normal tw-mb-1 tw-text-sm">CALCINHA HOT PANT CAVADA FLUITY</h1>
+            <p class="tw-mb-1"><strong>R$198,00</strong></p>
+            <div id="product-amount" class="tw-flex">
+              <button id="les" class="tw-p-2 tw-border tw-border-black">
+                <img src="./img/icon/less.svg" alt="">
+              </button>
+              <div id="mount" class="tw-px-2 tw-py-1 tw-bg-zinc-200"><span>01</span></div>
+              <button id="more" class="tw-p-2 tw-border tw-border-black">
+                <img src="./img/icon/moreB.svg" alt="">
+              </button>
             </div>
-            <div id="info-product" class="tw-w-40 tw-py-2">
-              <h1 class="tw-font-normal tw-leading-4 break-normal tw-mb-1 tw-text-sm">CALCINHA HOT PANT CAVADA FLUITY</h1>
-              <p class="tw-mb-1"><strong>R$198,00</strong></p>
-              <div id="product-amount" class="flex">
-                <button id="les" class="tw-p-2 tw-border tw-border-black">
-                  <img src="./img/icon/less.svg" alt="">
-                </button>
-                <div id="mount" class="tw-px-2 tw-py-1 tw-bg-zinc-200"><span>01</span></div>
-                <button id="more" class="tw-p-2 tw-border tw-border-black">
-                  <img src="./img/icon/moreB.svg" alt="">
-                </button>
-              </div>
-            </div>
-            <button id="remove-product" class='tw-flex tw-justify-center tw-items-center tw-mr-6'>
-              <img src="./img/icon/trash.svg" alt="" class="tw-h-6">
-            </button>
           </div>
-
-          <div id="product" class="swiper-slide tw-flex tw-justify-between tw-mb-5">
-            <div id="product-image" class="tw-w-70">
-              <img src="./img/produtos/clothing1.png" alt="" class="">
-            </div>
-            <div id="info-product" class="tw-w-40 tw-py-2">
-              <h1 class="tw-font-normal tw-leading-4 break-normal tw-mb-1 tw-text-sm">CALCINHA HOT PANT CAVADA FLUITY</h1>
-              <p class="tw-mb-1"><strong>R$198,00</strong></p>
-              <div id="product-amount" class="flex">
-                <button id="les" class="tw-p-2 tw-border tw-border-black">
-                  <img src="./img/icon/less.svg" alt="">
-                </button>
-                <div id="mount" class="tw-px-2 tw-py-1 tw-bg-zinc-200"><span>01</span></div>
-                <button id="more" class="tw-p-2 tw-border tw-border-black">
-                  <img src="./img/icon/moreB.svg" alt="">
-                </button>
-              </div>
-            </div>
-            <button id="remove-product" class='tw-flex tw-justify-center tw-items-center tw-mr-6'>
-              <img src="./img/icon/trash.svg" alt="" class="tw-h-6">
-            </button>
-          </div>
-
-          <div id="product" class="swiper-slide tw-flex tw-justify-between tw-mb-5">
-            <div id="product-image" class="tw-w-70">
-              <img src="./img/produtos/clothing1.png" alt="" class="">
-            </div>
-            <div id="info-product" class="tw-w-40 tw-py-2">
-              <h1 class="tw-font-normal tw-leading-4 break-normal tw-mb-1 tw-text-sm">CALCINHA HOT PANT CAVADA FLUITY</h1>
-              <p class="tw-mb-1"><strong>R$198,00</strong></p>
-              <div id="product-amount" class="flex">
-                <button id="les" class="tw-p-2 tw-border tw-border-black">
-                  <img src="./img/icon/less.svg" alt="">
-                </button>
-                <div id="mount" class="tw-px-2 tw-py-1 tw-bg-zinc-200"><span>01</span></div>
-                <button id="more" class="tw-p-2 tw-border tw-border-black">
-                  <img src="./img/icon/moreB.svg" alt="">
-                </button>
-              </div>
-            </div>
-            <button id="remove-product" class='tw-flex tw-justify-center tw-items-center tw-mr-6'>
-              <img src="./img/icon/trash.svg" alt="" class="tw-h-6">
-            </button>
-          </div>
+          <button id="remove-product" class='tw-flex tw-justify-center tw-items-center tw-mr-6'>
+            <img src="./img/icon/trash.svg" alt="" class="tw-h-6">
+          </button>
         </div>
-      <div class="swiper-scrollbar"></div>
+
+        <div id="product" class="swiper-slide tw-flex tw-justify-between tw-mb-5">
+          <div id="product-image" class="tw-w-70">
+            <img src="./img/produtos/clothing1.png" alt="" class="">
+          </div>
+          <div id="info-product" class=" tw-w-40 tw-py-2">
+            <h1 class="tw-font-normal tw-leading-4 break-normal tw-mb-1 tw-text-sm">CALCINHA HOT PANT CAVADA FLUITY</h1>
+            <p class="tw-mb-1"><strong>R$198,00</strong></p>
+            <div id="product-amount" class="tw-flex">
+              <button id="les" class="tw-p-2 tw-border tw-border-black">
+                <img src="./img/icon/less.svg" alt="">
+              </button>
+              <div id="mount" class="tw-px-2 tw-py-1 tw-bg-zinc-200"><span>01</span></div>
+              <button id="more" class="tw-p-2 tw-border tw-border-black">
+                <img src="./img/icon/moreB.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <button id="remove-product" class='tw-flex tw-justify-center tw-items-center tw-mr-6'>
+            <img src="./img/icon/trash.svg" alt="" class="tw-h-6">
+          </button>
+        </div>
+        
+        <div id="product" class="swiper-slide tw-flex tw-justify-between tw-mb-5">
+          <div id="product-image" class="tw-w-70">
+            <img src="./img/produtos/clothing1.png" alt="" class="">
+          </div>
+          <div id="info-product" class=" tw-w-40 tw-py-2">
+            <h1 class="tw-font-normal tw-leading-4 break-normal tw-mb-1 tw-text-sm">CALCINHA HOT PANT CAVADA FLUITY</h1>
+            <p class="tw-mb-1"><strong>R$198,00</strong></p>
+            <div id="product-amount" class="tw-flex">
+              <button id="les" class="tw-p-2 tw-border tw-border-black">
+                <img src="./img/icon/less.svg" alt="">
+              </button>
+              <div id="mount" class="tw-px-2 tw-py-1 tw-bg-zinc-200"><span>01</span></div>
+              <button id="more" class="tw-p-2 tw-border tw-border-black">
+                <img src="./img/icon/moreB.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <button id="remove-product" class='tw-flex tw-justify-center tw-items-center tw-mr-6'>
+            <img src="./img/icon/trash.svg" alt="" class="tw-h-6">
+          </button>
+        </div>
+        <div id="product" class="swiper-slide tw-flex tw-justify-between tw-mb-5">
+          <div id="product-image" class="tw-w-70">
+            <img src="./img/produtos/clothing1.png" alt="" class="">
+          </div>
+          <div id="info-product" class=" tw-w-40 tw-py-2">
+            <h1 class="tw-font-normal tw-leading-4 break-normal tw-mb-1 tw-text-sm">CALCINHA HOT PANT CAVADA FLUITY</h1>
+            <p class="tw-mb-1"><strong>R$198,00</strong></p>
+            <div id="product-amount" class="tw-flex">
+              <button id="les" class="tw-p-2 tw-border tw-border-black">
+                <img src="./img/icon/less.svg" alt="">
+              </button>
+              <div id="mount" class="tw-px-2 tw-py-1 tw-bg-zinc-200"><span>01</span></div>
+              <button id="more" class="tw-p-2 tw-border tw-border-black">
+                <img src="./img/icon/moreB.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <button id="remove-product" class='tw-flex tw-justify-center tw-items-center tw-mr-6'>
+            <img src="./img/icon/trash.svg" alt="" class="tw-h-6">
+          </button>
+        </div>
       </div>
+    <div class="swiper-scrollbar"></div>
     </div>
-      <div id="line" class=""></div>
-      <div id="next-cart" class="tw-p-4 tw-bg-white tw-w-76 tw-z-50 ">
-        <div id="price" class="tw-flex tw-items-center tw-justify-between mb-8 tw-bg-white">
-          <p>SUBTOTAL</p>
-          <span><strong>R$198,00</strong></span>
-        </div>
-        <button class="tw-w-full tw-border tw-border-black tw-py-4 tw-mb-4">
-          <p>CONTINUAR COMPRANDO</p>
-        </button>
-        <button class="tw-w-full tw-border tw-border-black tw-bg-black tw-text-white  tw-py-4 ">
-          <p>FINALIZAR COMPRA</p>
-        </button>
+  </div>
+    <div id="line" class=""></div>
+    <div id="next-cart" class="tw-p-4 tw-bg-white tw-w-76 tw-z-50 ">
+      <div id="price" class="tw-flex tw-items-center tw-justify-between mb-8 tw-bg-white">
+        <p>SUBTOTAL</p>
+        <span><strong>R$198,00</strong></span>
       </div>
-  </section>
+      <button class="tw-w-full tw-border tw-border-black tw-py-4 tw-mb-4">
+        <a href="/src/index.html"><p>CONTINUAR COMPRANDO</p></a>
+      </button>
+      <button class="tw-w-full tw-border tw-border-black tw-bg-black tw-text-white  tw-py-4 ">
+        <p>FINALIZAR COMPRA</p>
+      </button>
+    </div>
+</section>
 <!-- DROPDOW CARRINHO DE COMPRAS MOBILE -->
 <!-- SEARCH -->
   <section id="search" class="tw-w-9/12  tw-absolute tw-left-44 tw-top-5 tw-bg-transparent tw-flex " x-show="search" @click.outside="search = false">
@@ -406,7 +405,7 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide ">
-              <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+              <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
                 <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
                   <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
                 </div>
@@ -417,7 +416,7 @@
               </a>
             </div>
             <div class="swiper-slide ">
-              <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+              <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
                 <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
                   <img src="./img/produtos/clothing2.png" alt="" class="tw-bg-slate-400 tw-w-305">
                 </div>
@@ -428,7 +427,7 @@
               </a>
             </div>
             <div class="swiper-slide ">
-              <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+              <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
                 <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
                   <img src="./img/produtos/clothing4.png" alt="" class="tw-bg-slate-400 tw-w-305">
                 </div>
@@ -439,7 +438,7 @@
               </a>
             </div>
             <div class="swiper-slide ">
-              <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+              <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
                 <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
                   <img src="./img/produtos/clothing4.png" alt="" class="tw-bg-slate-400 tw-w-305">
                 </div>
@@ -450,7 +449,7 @@
               </a>
             </div>
             <div class="swiper-slide ">
-              <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+              <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
                 <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
                   <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
                 </div>
@@ -461,7 +460,7 @@
               </a>
             </div>
             <div class="swiper-slide ">
-              <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+              <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
                 <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
                   <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
                 </div>
@@ -472,7 +471,7 @@
               </a>
             </div>
             <div class="swiper-slide ">
-              <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+              <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
                 <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
                   <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
                 </div>
@@ -500,7 +499,7 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide ">
-          <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+          <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
             <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
               <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
             </div>
@@ -511,7 +510,7 @@
           </a>
         </div>
         <div class="swiper-slide ">
-          <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+          <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
             <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
               <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
             </div>
@@ -522,7 +521,7 @@
           </a>
         </div>
         <div class="swiper-slide ">
-          <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+          <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
             <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
               <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
             </div>
@@ -533,7 +532,7 @@
           </a>
         </div>
         <div class="swiper-slide ">
-          <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+          <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
             <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
               <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
             </div>
@@ -544,7 +543,7 @@
           </a>
         </div>
         <div class="swiper-slide ">
-          <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+          <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
             <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
               <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
             </div>
@@ -555,7 +554,7 @@
           </a>
         </div>
         <div class="swiper-slide ">
-          <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+          <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
             <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
               <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
             </div>
@@ -566,7 +565,7 @@
           </a>
         </div>
         <div class="swiper-slide ">
-          <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+          <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
             <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
               <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
             </div>
@@ -598,7 +597,7 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide ">
-          <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+          <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
             <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
               <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
             </div>
@@ -609,7 +608,7 @@
           </a>
         </div>
         <div class="swiper-slide ">
-          <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+          <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
             <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
               <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
             </div>
@@ -620,7 +619,7 @@
           </a>
         </div>
         <div class="swiper-slide ">
-          <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+          <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
             <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
               <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
             </div>
@@ -631,7 +630,7 @@
           </a>
         </div>
         <div class="swiper-slide ">
-          <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+          <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
             <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
               <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
             </div>
@@ -642,7 +641,7 @@
           </a>
         </div>
         <div class="swiper-slide ">
-          <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+          <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
             <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
               <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
             </div>
@@ -653,7 +652,7 @@
           </a>
         </div>
         <div class="swiper-slide ">
-          <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+          <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
             <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
               <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
             </div>
@@ -664,7 +663,7 @@
           </a>
         </div>
         <div class="swiper-slide ">
-          <a href="" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
+          <a href="/src/product.html" class="tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 tw-cursor-pointer">
             <div id="product-img" class="tw-bg-black tw-min-w-242 lg:tw-min-w-0 lg:tw-max-w-305 ">
               <img src="./img/produtos/clothing1.png" alt="" class="tw-bg-slate-400 tw-w-305">
             </div>
@@ -694,32 +693,32 @@
     <div id="social-img">
       <ul class="tw-flex tw-overflow-x-auto">
         <li class="tw-min-w-197/1 tw-m-4  lg:tw-min-w-0 xl:tw-max-w-197/1">
-          <a href="#">
+          <a href="https://www.instagram.com/cila_br/">
             <img src="./img/produtos/social1.png" alt="">
           </a>
         </li>
         <li class="tw-min-w-197/1 tw-m-4  lg:tw-min-w-0 xl:tw-max-w-197/1">
-          <a href="#">
+          <a href="https://www.instagram.com/cila_br/">
             <img src="./img/produtos/social2.png" alt="">
           </a>
         </li>
         <li class="tw-min-w-197/1 tw-m-4  lg:tw-min-w-0 xl:tw-max-w-197/1">
-          <a href="#">
+          <a href="https://www.instagram.com/cila_br/">
             <img src="./img/produtos/social3.png" alt="">
           </a>
         </li>
         <li class="tw-min-w-197/1 tw-m-4  lg:tw-min-w-0 xl:tw-max-w-197/1">
-          <a href="#">
+          <a href="https://www.instagram.com/cila_br/">
             <img src="./img/produtos/social4.png" alt="">
           </a>
         </li>
         <li class="tw-min-w-197/1 tw-m-4  lg:tw-min-w-0 xl:tw-max-w-197/1">
-          <a href="#">
+          <a href="https://www.instagram.com/cila_br/">
             <img src="./img/produtos/social5.png" alt="">
           </a>
         </li>
         <li class="tw-min-w-197/1 tw-m-4  lg:tw-min-w-0 xl:tw-max-w-197/1">
-          <a href="#">
+          <a href="https://www.instagram.com/cila_br/">
             <img src="./img/produtos/social6.png" alt="">
           </a>
         </li>
@@ -748,9 +747,9 @@
     <section id="submenuBottom" class="tw-bg-black tw-py-4 tw-px-4 lg:tw-flex"  x-data="{acord1 : false,acord2 : false,acord3 : false,acord4 : false}">
       <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4  lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start ">
         <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4" @click="acord1 = ! acord1">
-          <h3 class="text-white tw-text-base ">INSTITUCIONAL</h3>
-          <i x-show="!acord1" class="fa-solid fa-plus text-white lg:invisible"></i>
-          <i x-show="acord1" class="fa-solid fa-minus text-white lg:invisible"></i>
+          <h3 class="tw-text-white tw-text-base ">INSTITUCIONAL</h3>
+          <i x-show="!acord1" class="fa-solid fa-plus tw-text-white lg:tw-invisible"></i>
+          <i x-show="acord1" class="fa-solid fa-minus tw-text-white lg:tw-invisible"></i>
         </button>
         <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
         <section id="" x-show="acord1">
@@ -768,8 +767,8 @@
       <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start   ">
         <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4" @click="acord2 = ! acord2">
           <h3 class="tw-text-white tw-text-base ">POLÍTICAS</h3>
-          <i x-show="!acord2" class="fa-solid fa-plus text-white lg:invisible"></i>
-          <i x-show="acord2" class="fa-solid fa-minus text-white lg:invisible"></i>
+          <i x-show="!acord2" class="fa-solid fa-plus tw-text-white lg:tw-invisible"></i>
+          <i x-show="acord2" class="fa-solid fa-minus tw-text-white lg:tw-invisible"></i>
         </button>
         <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
         <section id="menuOpitions" x-show="acord2">
@@ -785,9 +784,9 @@
       </div> 
       <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start tw-border-b tw-border-gray-700 py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start"@click="acord3 = ! acord3">
         <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4">
-        <h3 class="text-white tw-text-base ">SOBRE NÓS</h3>
-        <i x-show="!acord3" class="fa-solid fa-plus text-white lg:invisible"></i>
-        <i x-show="acord3" class="fa-solid fa-minus text-white lg:invisible"></i>
+        <h3 class="tw-text-white tw-text-base ">SOBRE NÓS</h3>
+        <i x-show="!acord3" class="fa-solid fa-plus tw-text-white lg:tw-invisible"></i>
+        <i x-show="acord3" class="fa-solid fa-minus tw-text-white lg:tw-invisible"></i>
         </button>
         <div id="line" class="lg:tw-w-full lg:h-px lg:tw-bg-white lg:tw-mb-4"></div>
         <section id="menuOpitions" x-show="acord3">
@@ -804,18 +803,18 @@
       </div> 
       <div id="menuFooter" class="tw-w-full tw-flex tw-flex-col tw-justify-between tw-items-start  py-3 tw-mb-4 lg:tw-ml-4 lg:tw-border-none lg:tw-flex-col lg:tw-items-start lg:tw-grid lg:tw-content-start " @click="acord4 = ! acord4">
         <button id="divider" class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mb-4">
-        <h3 class="text-white tw-text-base ">CONTATO</h3>
-        <i x-show="!acord4" class="fa-solid fa-plus text-white lg:invisible"></i>
-        <i x-show="acord4" class="fa-solid fa-minus text-white lg:invisible"></i>
+        <h3 class="tw-text-white tw-text-base ">CONTATO</h3>
+        <i x-show="!acord4" class="fa-solid fa-plus tw-text-white lg:tw-invisible"></i>
+        <i x-show="acord4" class="fa-solid fa-minus tw-text-white lg:tw-invisible"></i>
         </button>
         <section id="menuOpitions" x-show="acord4">
-          <div id="textContact" class="text-white mb-3">
+          <div id="textContact" class="tw-text-white mb-3">
           <p>(31)2555-7566 - 11h ás 19h</p>
           <p>(31)99142-4956 - 10h ás 17h</p>
           <p>cila@cila.com.br</p>
           <p>troca@cila.com.br</p>
           </div>
-          <div id="textContact" class="text-white mb-3">
+          <div id="textContact" class="tw-text-white mb-3">
           <p>Horário de funcionamento da loja física:</p>
           <p>Segunda á Sexta - 10h ás 19h</p>
           <p>Sábado - 9h ás 14h</p>
